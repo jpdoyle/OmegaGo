@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta http-equiv="refresh" content="5" >
+    </head>
+
+    <body>
+    <h2><a href=".{{url_for('gameSetup')}}">Create a New Game</a></h2>
+        <h2>Tourney {% if not tourney %} not {% endif %} running</h2>
+        <form id="setTourney"
+              action=".{{url_for('setTourney')}}">
+            <input type="checkbox" name="tourney"
+                style="display:none" checked
+                value='{%if tourney%}0{%else%}1{%endif%}'>
+            <input type="submit"
+            value="{% if tourney %}End{%else%}Start{%endif%} tourney">
+        </form>
+        <h2>{{ workers|length }} Workers 
+            ({{ (workers|map(attribute='4')|map('attr','cpuLoad')|sum
+                - workers|map(attribute='3')|map('attr','cpuLoad')|sum)
+                |round(1)
+             }}/{{ workers|map(attribute='4')|map('attr','cpuLoad')|sum
+                   |round(1)
+             }} CPU threads,
+            {{ (workers|map(attribute='4')|map('attr','memLoad')|sum
+                - workers|map(attribute='3')|map('attr','memLoad')|sum)
+                |round(1)
+             }}/{{ workers|map(attribute='4')|map('attr','memLoad')
+                |sum|round(1)
+             }} GBs of RAM)</h2>
+        <h2>{{games|length}} Games
+            ({{games|selectattr("3","equalto","Active")|list|count}} Active):</h2>
+        <table border="1">
+            <tr> <td>Link</td><td>Start time</td> <td>Black</td> <td>White</td>
+                <td>Status</td> </tr>
+        {% for key,bname,wname,status,time in games|reverse %}
+        <tr><td><a href=".{{ url_for('goban') }}?game={{ key }}">View game</a></td>
+            <td>{{ time }}</td><td>{{ bname }}</td>
+            <td>{{ wname }}</td> <td>{{ status }}</td></tr>
+        {% endfor %}
+        </table>
+
+        <h2>{{ workers|length }} Workers 
+            ({{ (workers|map(attribute='4')|map('attr','cpuLoad')|sum
+                - workers|map(attribute='3')|map('attr','cpuLoad')|sum)
+                |round(1)
+             }}/{{ workers|map(attribute='4')|map('attr','cpuLoad')|sum
+                   |round(1)
+             }} CPU threads,
+            {{ (workers|map(attribute='4')|map('attr','memLoad')|sum
+                - workers|map(attribute='3')|map('attr','memLoad')|sum)
+                |round(1)
+             }}/{{ workers|map(attribute='4')|map('attr','memLoad')
+                |sum|round(1)
+             }} GBs of RAM)</h2>
+        <ul>
+        {% for id,name,tasks,avail,maxAvail,running in
+        (workers|sort(attribute="1")) %}
+        <li>{{ name }}: {{ (maxAvail.cpuLoad - avail.cpuLoad)|round(1)
+            }}/{{ maxAvail.cpuLoad|round(1) }}
+            CPU threads, {{ (maxAvail.memLoad - avail.memLoad)|round(1)
+            }}/{{ maxAvail.memLoad|round(1) }} GBs of RAM
+            <ul>
+                <li>ID: {{ id }}</li>
+                <li>Can run: {% for t in tasks %}
+                    {{ t }} |
+                    {% endfor %}
+                <li>Running:
+                    <ul>
+                    {% for id,type in running %}
+                    <li>{{ type }}: {{ id }}</li>
+                    {% endfor %}
+                    </ul></li>
+            </ul>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
+

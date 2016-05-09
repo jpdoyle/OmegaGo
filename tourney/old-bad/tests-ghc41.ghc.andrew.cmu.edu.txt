@@ -1,0 +1,433 @@
+"cpp-onemove" vs "cpp-mcts" (a61d0cd9-1b44-42e8-a07f-eb0fe403ed5b): (B 536, W 415), B+121, -1
+"cpp-mcts" vs "cpp-onemove" (9d4a3e6b-140c-4ecf-9a8b-973bc4be442f): (B 390, W 529), W+139, -1
+"cpp-onemove" vs "cpp-mcts" (384f5c83-cbbc-400a-bed0-cd51c8cddb53): (B 560, W 355), B+205, -1
+"cpp-onemove" vs "cpp-mcts" (1b10cfb0-84bc-4345-80f5-a1e97292cafd): (B 742, W 307), B+435, -1
+"cpp-mcts" vs "cpp-onemove" (a9fa630e-4bdf-4a4b-af9b-1ded821d8959): (B 370, W 579), W+209, -1
+"cpp-onemove" vs "cpp-mcts" (f5b5547a-4eac-47e9-a4df-261a244baa2e): (B 710, W 301), B+409, -1
+"cpp-mcts" vs "cpp-onemove" (1bc2d1e6-8688-4465-9e62-34054733ce2c): (B 398, W 589), W+191, -1
+"cpp-onemove" vs "cpp-mcts" (d53fd3fc-e55c-4953-812b-17fff1b45243): (B 718, W 279), B+439, -1
+"cpp-mcts" vs "cpp-onemove" (8e3dde3f-b470-49da-8b8f-b38472f63f82): (B 310, W 697), W+387, -1
+"cpp-onemove" vs "cpp-mcts" (d0784c0f-75e2-4859-80b0-aa4aca6b1d31): (B 806, W 237), B+569, -1
+"cpp-mcts" vs "cpp-onemove" (2c96d8d3-bf39-435a-8032-3adc08a37c33): (B 412, W 573), W+161, -1
+"cpp-onemove" vs "cpp-mcts" (748c3d6d-cc72-4ec5-bf34-125668b65a31): (B 554, W 475), B+79, -1
+"cpp-mcts" vs "cpp-onemove" (f122f38f-2214-4593-931f-facb8fbbb31c): (B 316, W 679), W+363, -1
+"cpp-onemove" vs "cpp-mcts" (6ae8c7e9-a9c2-4466-aae9-bc077f160667): (B 582, W 505), B+77, -1
+"cpp-mcts" vs "cpp-onemove" (5f769bfa-3af4-47dd-a699-840bd3f9fdc2): (B 380, W 791), W+411, -1
+"cpp-onemove" vs "cpp-mcts" (0afc724c-d2e5-430a-bc9d-60181bdf4ce2): (B 618, W 397), B+221, -1
+"cpp-mcts" vs "cpp-onemove" (9edff404-c432-42b3-a0d5-0c5b6f91d4de): (B 560, W 535), B+25, 1
+"cpp-onemove" vs "cpp-mcts" (249064f0-0c96-4a47-af9e-8acbfe9b632f): (B 690, W 295), B+395, -1
+"cpp-mcts" vs "cpp-onemove" (41b1217c-1f01-4f51-9fde-15c11d2de06b): (B 346, W 589), W+243, -1
+"cpp-onemove" vs "cpp-mcts" (0ca172bb-2af4-46a8-8caa-1d61107a6852): (B 662, W 359), B+303, -1
+"cpp-mcts" vs "cpp-onemove" (2bc0138d-0ac7-44c4-93be-67a59a54e242): (B 482, W 529), W+47, -1
+"cpp-onemove" vs "cpp-mcts" (2bc772ce-e04b-499b-a897-7793a66d9be3): (B 518, W 429), B+89, -1
+"cpp-mcts" vs "cpp-onemove" (bff139d2-a776-4855-8e90-0abb494b2555): (B 376, W 681), W+305, -1
+"cpp-onemove" vs "cpp-mcts" (529eaf00-e0b4-45a4-84c7-eba03648c1c8): (B 710, W 331), B+379, -1
+"cpp-onemove" vs "cpp-mcts" (f097fa47-2c69-4744-9de3-e8ef6d2b54d5): (B 520, W 447), B+73, -1
+"cpp-mcts" vs "cpp-onemove" (c85962bd-4190-47d9-8709-38da6dcfd4fa): (B 516, W 619), W+103, -1
+"cpp-onemove" vs "cpp-mcts" (7c64ecae-9a41-4da3-8bc3-303a0b14872f): (B 570, W 411), B+159, -1
+"cpp-mcts" vs "cpp-onemove" (579d4ded-1429-4c13-a936-c8b24e009c77): (B 618, W 469), B+149, 1
+"cpp-onemove" vs "cpp-mcts" (0cb45a6f-6ac2-418a-b04c-a3f7599e125c): (B 684, W 269), B+415, -1
+"cpp-mcts" vs "cpp-onemove" (1fb4c8e6-0ead-4189-9234-9cac0696dda0): (B 420, W 667), W+247, -1
+"cpp-mcts" vs "cpp-onemove" (23cfce35-7b10-4ee7-a95f-8a4859de0003): (B 396, W 597), W+201, -1
+"cpp-onemove" vs "cpp-mcts" (017471ff-a0cc-4fbe-bb81-904cea7eb565): (B 506, W 431), B+75, -1
+"cpp-mcts" vs "cpp-onemove" (1f859d9e-d5cf-404a-b670-47bda33c284c): (B 348, W 619), W+271, -1
+"cpp-onemove" vs "cpp-mcts" (631af983-6a00-4225-a4bd-4645cef52705): (B 678, W 427), B+251, -1
+"cpp-mcts" vs "cpp-onemove" (6d6043a0-2a56-4359-a747-43a70d14900b): (B 526, W 507), B+19, 1
+"cpp-onemove" vs "cpp-mcts" (48a06ea4-dd6d-422e-ae32-44444e4076dd): (B 586, W 419), B+167, -1
+"cpp-mcts" vs "cpp-onemove" (71225183-9421-4421-9f06-2b1e50452381): (B 340, W 665), W+325, -1
+"cpp-onemove" vs "cpp-mcts" (0e6b237a-aac1-4b77-8724-763c11d01091): (B 434, W 545), W+111, 1
+"cpp-mcts" vs "cpp-onemove" (fdbd77ee-0e04-443f-aea6-5eb7e54deef9): (B 356, W 693), W+337, -1
+"cpp-onemove" vs "cpp-mcts" (1a63c4aa-7b28-47cb-a400-0b3461aff86d): (B 610, W 449), B+161, -1
+"cpp-mcts" vs "cpp-onemove" (2bf23ac6-ecbb-4a58-b361-d8d9a52e10b4): (B 398, W 633), W+235, -1
+"cpp-onemove" vs "cpp-mcts" (5b514dcb-bd98-4ed7-a82c-95f9d856a849): (B 634, W 349), B+285, -1
+"cpp-mcts" vs "cpp-onemove" (3dac992d-df38-417c-8928-d542178b7dd2): (B 332, W 651), W+319, -1
+"cpp-onemove" vs "cpp-mcts" (31261602-e72e-49eb-94e5-7a4788085aa9): (B 734, W 313), B+421, -1
+"cpp-mcts" vs "cpp-onemove" (a5ec1f62-d635-4e2f-bcdf-feef55270ffa): (B 386, W 623), W+237, -1
+"cpp-onemove" vs "cpp-mcts" (5f8aa935-8524-4110-89ef-9dc7ac2fc1b0): (B 654, W 389), B+265, -1
+"cpp-onemove" vs "cpp-mcts" (40786330-3ab6-4554-8fe1-1e01f32317c6): (B 546, W 477), B+69, -1
+"cpp-mcts" vs "cpp-onemove" (9fc1f570-52cf-4569-aa6a-56be1257c546): (B 404, W 859), W+455, -1
+"cpp-mcts" vs "cpp-onemove" (259d39e3-bf35-4dfd-958c-baeba24da605): (B 274, W 687), W+413, -1
+"cpp-onemove" vs "cpp-mcts" (7ccfce26-2500-4ea4-abfe-873dc2f21172): (B 614, W 395), B+219, -1
+"cpp-mcts" vs "cpp-onemove" (f6b0884a-c4b4-41b9-a822-f4b70b16f659): (B 272, W 727), W+455, -1
+"cpp-onemove" vs "cpp-mcts" (3a69ab2a-9ef3-4751-bf7b-d1a8a7551d75): (B 430, W 547), W+117, 1
+"cpp-mcts" vs "cpp-onemove" (af0ea8af-15cd-4cfe-a72f-b6f79d8072db): (B 394, W 517), W+123, -1
+"cpp-onemove" vs "cpp-mcts" (b12fd599-3055-4970-883c-ccc34d6a81b8): (B 752, W 311), B+441, -1
+"cpp-mcts" vs "cpp-onemove" (17f03302-2e86-4039-bdeb-0457ed7e8ca4): (B 450, W 707), W+257, -1
+"cpp-onemove" vs "cpp-mcts" (7d624feb-0091-4745-9b4c-18b855704c10): (B 578, W 359), B+219, -1
+"cpp-onemove" vs "cpp-mcts" (2dab477e-6b0f-4728-bb37-b1b48843a270): (B 726, W 301), B+425, -1
+"cpp-mcts" vs "cpp-onemove" (adac3c2d-90a8-4a04-a3e3-17b9faf99c5c): (B 390, W 637), W+247, -1
+"cpp-mcts" vs "cpp-onemove" (b5ce75a3-715a-4e8e-a98b-b20a9b86e891): (B 518, W 491), B+27, 1
+"cpp-onemove" vs "cpp-mcts" (e2a69b10-c263-4fd6-851a-17bf7e38f8bf): (B 678, W 339), B+339, -1
+"cpp-mcts" vs "cpp-onemove" (59ac275b-93a7-4bac-a8a1-4ade389b5b79): (B 328, W 643), W+315, -1
+"cpp-onemove" vs "cpp-mcts" (45a88bbb-0667-4f8b-8d63-3cac09207abe): (B 606, W 487), B+119, -1
+"cpp-mcts" vs "cpp-onemove" (be6ce8ce-7f60-444c-b44d-60a86d24abfb): (B 540, W 459), B+81, 1
+"cpp-onemove" vs "cpp-mcts" (f5c8091c-4bbb-4111-b7be-2cc10fff7c44): (B 524, W 379), B+145, -1
+"cpp-mcts" vs "cpp-onemove" (c2eb1c8f-03c0-4a45-ac97-4cb1a47d4c13): (B 284, W 727), W+443, -1
+"cpp-onemove" vs "cpp-mcts" (a963b63b-11ca-4bb3-b66d-93003f8c2b60): (B 822, W 291), B+531, -1
+"cpp-mcts" vs "cpp-onemove" (19f11c49-4c6b-42ec-906b-b00d177ac16b): (B 338, W 709), W+371, -1
+"cpp-onemove" vs "cpp-mcts" (5fa36a2f-6824-4ca3-a772-6e634f4fe094): (B 562, W 423), B+139, -1
+"cpp-mcts" vs "cpp-onemove" (7da070ed-d63f-409e-9112-9cbbaa7d4930): (B 350, W 651), W+301, -1
+"cpp-onemove" vs "cpp-mcts" (e84c4e78-8604-4494-87a6-ce2371c4389c): (B 622, W 403), B+219, -1
+"cpp-mcts" vs "cpp-onemove" (32f88cc4-45c7-4883-a262-72be99be0f34): (B 330, W 609), W+279, -1
+"cpp-onemove" vs "cpp-mcts" (f1fabc78-322c-4885-ae84-ec779be5090c): (B 744, W 347), B+397, -1
+"cpp-mcts" vs "cpp-onemove" (c8e3f2a3-61c1-4b1b-bffc-68d553c56387): (B 404, W 669), W+265, -1
+"cpp-onemove" vs "cpp-mcts" (a1bc459c-be63-4a60-be2a-00e6f3546b73): (B 658, W 327), B+331, -1
+"cpp-mcts" vs "cpp-onemove" (463a2801-190f-481f-a408-069e2a769ac7): (B 432, W 569), W+137, -1
+"cpp-onemove" vs "cpp-mcts" (5e8605c8-8142-4fda-8cef-5c7815a7ee1d): (B 562, W 427), B+135, -1
+"cpp-mcts" vs "cpp-onemove" (cb8d6c66-2f32-4ab4-b483-d9d958e5ab8d): (B 496, W 513), W+17, -1
+"cpp-onemove" vs "cpp-mcts" (2ea0c7e9-0463-4311-b6be-ec2d00752ff4): (B 640, W 451), B+189, -1
+"cpp-mcts" vs "cpp-onemove" (59822756-5813-4b24-9fea-93359f8d7a48): (B 464, W 563), W+99, -1
+"cpp-onemove" vs "cpp-mcts" (82b48ef7-891d-43d3-a8d0-8202b0e63762): (B 594, W 425), B+169, -1
+"cpp-onemove" vs "cpp-mcts" (b32a863f-9e0d-4e53-8c29-2ab9a14f79f9): (B 600, W 421), B+179, -1
+"cpp-mcts" vs "cpp-onemove" (c4843374-6055-4cfa-939a-513058fc3e39): (B 406, W 757), W+351, -1
+"cpp-mcts" vs "cpp-onemove" (47d66062-cd0e-44ce-85ec-f07be7beb793): (B 398, W 527), W+129, -1
+"cpp-onemove" vs "cpp-mcts" (9680aa07-a576-46f2-b3a2-22f6803f1da5): (B 484, W 519), W+35, 1
+"cpp-mcts" vs "cpp-onemove" (39a6f7e9-b39c-4e6e-ab4a-a51a27fa1cfd): (B 496, W 503), W+7, -1
+"cpp-onemove" vs "cpp-mcts" (11e4abc1-f009-4893-8ac3-84217d72f581): (B 592, W 395), B+197, -1
+"cpp-mcts" vs "cpp-onemove" (859b1bcf-7ff1-4acc-b282-0f446626abd5): (B 412, W 529), W+117, -1
+"cpp-onemove" vs "cpp-mcts" (bf3d6dd9-7308-49c7-899d-a9f2143eb5b0): (B 444, W 611), W+167, 1
+"cpp-mcts" vs "cpp-onemove" (1cebb276-d4ee-4ec0-a084-7f605900d3e2): (B 368, W 577), W+209, -1
+"cpp-onemove" vs "cpp-mcts" (60712780-1e3b-40f1-b8b4-86e257af9c0b): (B 524, W 365), B+159, -1
+"cpp-mcts" vs "cpp-onemove" (3016fc97-912f-4d4b-99da-28f723c88b1e): (B 350, W 587), W+237, -1
+"cpp-onemove" vs "cpp-mcts" (db599335-0739-4cd2-b1ca-590564e57ab9): (B 624, W 343), B+281, -1
+"cpp-mcts" vs "cpp-onemove" (822d5c00-5cd8-4e75-afe9-23d6026dcb59): (B 378, W 639), W+261, -1
+"cpp-onemove" vs "cpp-mcts" (fdee3952-3a04-4b8d-83c9-e09e2f82a0c9): (B 578, W 427), B+151, -1
+"cpp-mcts" vs "cpp-onemove" (290af00d-304a-4b44-9483-e01f4c8c538c): (B 266, W 791), W+525, -1
+"cpp-onemove" vs "cpp-mcts" (bbcf199e-c3c9-4b1e-afc1-ac6b135cef7a): (B 766, W 295), B+471, -1
+"cpp-mcts" vs "cpp-onemove" (cf7bda3a-59bd-4e5a-90a2-258189af8a7c): (B 304, W 675), W+371, -1
+"cpp-onemove" vs "cpp-mcts" (caa5f567-92bc-4204-abe3-2c28f75f131b): (B 566, W 463), B+103, -1
+"cpp-mcts" vs "cpp-onemove" (5f10d439-2929-496d-9ea8-bfc63e9ff76d): (B 474, W 593), W+119, -1
+"cpp-onemove" vs "cpp-mcts" (b181e3fe-3a90-44b1-b7b4-8c1a282cfb6e): (B 678, W 299), B+379, -1
+"cpp-onemove" vs "cpp-mcts" (8e27f54c-8baa-481a-927c-929afc1e8f8f): (B 640, W 343), B+297, -1
+"cpp-mcts" vs "cpp-onemove" (5f33cfa0-9d85-46b6-9dca-ae456a530d95): (B 438, W 665), W+227, -1
+"cpp-mcts" vs "cpp-onemove" (8cba8bdc-25cc-4bf8-b3d4-076a42310e62): (B 418, W 663), W+245, -1
+"cpp-onemove" vs "cpp-mcts" (286e3f9f-d534-42a9-94fc-eebc1b9c4e0f): (B 758, W 317), B+441, -1
+"cpp-onemove" vs "cpp-mcts" (c2b0d5c1-e85e-48a0-aad5-89224e1140e9): (B 610, W 477), B+133, -1
+"cpp-mcts" vs "cpp-onemove" (1994e763-2279-4efa-8dd0-af16e8991f5e): (B 436, W 645), W+209, -1
+"cpp-onemove" vs "cpp-mcts" (2bf89688-c808-44e1-9816-23880fcc3801): (B 434, W 519), W+85, 1
+"cpp-mcts" vs "cpp-onemove" (89386f45-50a1-43dc-af2c-b9a8f9ef0a84): (B 430, W 653), W+223, -1
+"cpp-mcts" vs "cpp-onemove" (757b5a6b-bc9a-4452-b4f7-041c8da6e1d5): (B 354, W 637), W+283, -1
+"cpp-onemove" vs "cpp-mcts" (c8ce22f3-e532-4307-be73-61d58a1c0248): (B 652, W 395), B+257, -1
+"cpp-mcts" vs "cpp-onemove" (2aaaabe9-b679-454b-8d9a-55cae31f3787): (B 336, W 695), W+359, -1
+"cpp-onemove" vs "cpp-mcts" (97710c1a-522f-4de0-99f4-1361b0eaf52b): (B 468, W 539), W+71, 1
+"cpp-mcts" vs "cpp-onemove" (34bef32e-791b-45db-b11a-3fb2a29544b6): (B 260, W 815), W+555, -1
+"cpp-onemove" vs "cpp-mcts" (82af98d0-5b0d-4411-9fca-24ea7ebd1c8f): (B 612, W 395), B+217, -1
+"cpp-mcts" vs "cpp-onemove" (d3a9d880-98f8-4c59-92a5-fc310c62fb7b): (B 486, W 459), B+27, 1
+"cpp-onemove" vs "cpp-mcts" (ceaebbfc-1f52-47b6-8016-b5dfbf0f85cb): (B 542, W 385), B+157, -1
+"cpp-mcts" vs "cpp-onemove" (0689510d-47b1-4045-9111-aab0a0646c9f): (B 332, W 625), W+293, -1
+"cpp-onemove" vs "cpp-mcts" (5c91110e-1b6c-4bc0-9f26-62889c78e11f): (B 664, W 321), B+343, -1
+"cpp-mcts" vs "cpp-onemove" (d91f3630-3c6d-4063-99ae-49aff7abe19c): (B 416, W 629), W+213, -1
+"cpp-onemove" vs "cpp-mcts" (cca6280d-9f8c-4f81-ae06-7e6da7d5336e): (B 792, W 287), B+505, -1
+"cpp-onemove" vs "cpp-mcts" (8610a86f-d584-4d5c-b657-7c515ecb003c): (B 526, W 413), B+113, -1
+"cpp-mcts" vs "cpp-onemove" (45959020-c8d0-43bd-81fb-8a69c00d55b0): (B 272, W 815), W+543, -1
+"cpp-mcts" vs "cpp-onemove" (6e27ab7a-26e3-424a-a83f-f3b5d993f48a): (B 408, W 625), W+217, -1
+"cpp-onemove" vs "cpp-mcts" (11bbd595-e223-4f48-85c2-6d33a07c2ee6): (B 578, W 423), B+155, -1
+"cpp-onemove" vs "cpp-mcts" (4b1a5e73-0579-4c6d-aab1-e4202bcf04f5): (B 460, W 459), B+1, -1
+"cpp-mcts" vs "cpp-onemove" (729c8e6f-f116-4744-952b-c3f0a3e96d80): (B 356, W 655), W+299, -1
+"cpp-mcts" vs "cpp-onemove" (2bcaa9e7-73e4-4159-b089-69f46ec95725): (B 386, W 641), W+255, -1
+"cpp-onemove" vs "cpp-mcts" (26b769d7-1c9e-44bf-b70e-109e7498dadc): (B 476, W 555), W+79, 1
+"cpp-mcts" vs "cpp-onemove" (b53a9cb5-382a-4aa6-b036-c64e56422635): (B 456, W 663), W+207, -1
+"cpp-onemove" vs "cpp-mcts" (caeb9c1d-4762-475a-8f63-4a0f61bab8cd): (B 674, W 345), B+329, -1
+"cpp-onemove" vs "cpp-mcts" (e3419953-4aa9-4cdb-b4d9-001d34a761fe): (B 586, W 355), B+231, -1
+"cpp-mcts" vs "cpp-onemove" (2afab682-911a-4ef0-a84c-e5735ba033ff): (B 260, W 813), W+553, -1
+"cpp-mcts" vs "cpp-onemove" (c9d663c2-712c-4183-bd0e-8d247dc95eb3): (B 294, W 807), W+513, -1
+"cpp-onemove" vs "cpp-mcts" (50ffef5c-fc7d-4d3f-9594-59004bae6e6d): (B 590, W 429), B+161, -1
+"cpp-mcts" vs "cpp-onemove" (b2d59477-9660-4c42-b93c-dfa95e6b8ca7): (B 340, W 657), W+317, -1
+"cpp-onemove" vs "cpp-mcts" (17376b23-2c65-446f-8764-70fefb466e6b): (B 606, W 441), B+165, -1
+"cpp-mcts" vs "cpp-onemove" (2c575d34-4f78-41db-8ad8-e4790c1819be): (B 328, W 743), W+415, -1
+"cpp-onemove" vs "cpp-mcts" (de805787-8e9a-42db-8e98-692167f3a1ed): (B 596, W 347), B+249, -1
+"cpp-mcts" vs "cpp-onemove" (92cb5133-b670-4e9b-b3a2-c4e341d9f09e): (B 302, W 729), W+427, -1
+"cpp-onemove" vs "cpp-mcts" (83709d7c-d35b-4756-aad8-b3bece2f5888): (B 570, W 409), B+161, -1
+"cpp-mcts" vs "cpp-onemove" (7948b780-7e19-4b0e-a572-8c999996163b): (B 410, W 715), W+305, -1
+"cpp-onemove" vs "cpp-mcts" (9b0eb71c-3135-4683-bb2c-8f230648134d): (B 530, W 423), B+107, -1
+"cpp-mcts" vs "cpp-onemove" (e25fc274-3ac8-4e99-b8e7-95adb5745ad4): (B 208, W 899), W+691, -1
+"cpp-onemove" vs "cpp-mcts" (40f43adf-46b6-41f4-a600-7deb0fccafb4): (B 752, W 313), B+439, -1
+"cpp-mcts" vs "cpp-onemove" (8909de2a-e1d1-439d-9af8-cea22f7eb496): (B 500, W 569), W+69, -1
+"cpp-onemove" vs "cpp-mcts" (d3638162-162d-4782-84bd-6d16216e12fa): (B 490, W 465), B+25, -1
+"cpp-mcts" vs "cpp-onemove" (9231f9bd-01ea-47c5-9093-b1e244e89fca): (B 276, W 799), W+523, -1
+"cpp-onemove" vs "cpp-mcts" (967e104f-1d93-4865-b2e2-b0a4a2f69ea0): (B 786, W 277), B+509, -1
+"cpp-mcts" vs "cpp-onemove" (514eb0b5-6a0f-4a92-91f0-9679f4e65f1f): (B 274, W 755), W+481, -1
+"cpp-onemove" vs "cpp-mcts" (d5ec230b-6ad2-4116-a0ed-7723c0a25603): (B 584, W 405), B+179, -1
+"cpp-mcts" vs "cpp-onemove" (26bc09f9-e0eb-43b4-b8b9-1f5f8ac57660): (B 250, W 765), W+515, -1
+"cpp-onemove" vs "cpp-mcts" (a7840591-f41a-47e3-94b7-04d73ce7f1a2): (B 570, W 485), B+85, -1
+"cpp-mcts" vs "cpp-onemove" (1b929517-6b40-430c-89cd-67c084d90f4f): (B 342, W 781), W+439, -1
+"cpp-onemove" vs "cpp-mcts" (6674144b-342e-4c4c-b96b-2ab0e6230760): (B 560, W 601), W+41, 1
+"cpp-mcts" vs "cpp-onemove" (c475b86f-4f81-4138-a151-4a98c29a0294): (B 328, W 663), W+335, -1
+"cpp-onemove" vs "cpp-mcts" (baf47b36-5a20-4320-90cc-847c72b8f4f0): (B 606, W 339), B+267, -1
+"cpp-mcts" vs "cpp-onemove" (74e56d5e-c37d-4670-8a75-1fbadd803a6f): (B 396, W 635), W+239, -1
+"cpp-onemove" vs "cpp-mcts" (b34ae969-efea-4008-b04f-a9fa9d9557fc): (B 552, W 445), B+107, -1
+"cpp-mcts" vs "cpp-onemove" (e7d3f126-b8c8-484c-a149-6b068a27ea2d): (B 492, W 591), W+99, -1
+"cpp-onemove" vs "cpp-mcts" (c5654ed2-152b-4678-bdeb-8f4f8763a39b): (B 544, W 529), B+15, -1
+"cpp-mcts" vs "cpp-onemove" (2a42872d-9f1f-477f-ac40-84ec2522e124): (B 588, W 491), B+97, 1
+2016-04-25 04:08:40.985934: "cpp-mcts" vs "cpp-onemove" (92abc275-084b-48e3-b677-083fc16425b4): (B 394, W 633), W+239, -1
+2016-04-25 04:15:45.184800: "cpp-onemove" vs "cpp-mcts" (399553cc-d8fa-4a74-990a-f9f7067e523a): (B 760, W 279), B+481, -1
+2016-04-25 04:22:26.029558: "cpp-mcts" vs "cpp-onemove" (23470f70-0fc4-43b6-869c-eddfa4cff2e1): (B 350, W 639), W+289, -1
+2016-04-25 04:29:40.547060: "cpp-onemove" vs "cpp-mcts" (74c0f12c-db9e-437c-94a8-288eaf113171): (B 596, W 463), B+133, -1
+2016-04-25 04:36:43.412310: "cpp-mcts" vs "cpp-onemove" (2eadc7d4-12d8-419d-b22b-46b27a9dcc5a): (B 360, W 661), W+301, -1
+2016-04-25 04:43:14.291700: "cpp-onemove" vs "cpp-mcts" (6c6e1c45-3633-4d85-9f12-b826cdcf29b1): (B 566, W 391), B+175, -1
+2016-04-25 04:50:05.873216: "cpp-mcts" vs "cpp-onemove" (8e7203db-cc5b-4b6e-a112-fd686a73d791): (B 430, W 541), W+111, -1
+2016-04-25 04:57:21.884250: "cpp-onemove" vs "cpp-mcts" (91c45921-d4eb-455c-a883-d5c6c761b6b0): (B 758, W 311), B+447, -1
+2016-04-25 05:04:03.764587: "cpp-mcts" vs "cpp-onemove" (4ef05e57-51fa-4b9c-aa69-23f73f433174): (B 412, W 549), W+137, -1
+2016-04-25 05:10:51.484366: "cpp-onemove" vs "cpp-mcts" (e20c742e-7c0f-4b35-894e-9379c19f207e): (B 674, W 335), B+339, -1
+2016-04-25 05:17:50.884964: "cpp-mcts" vs "cpp-onemove" (0199be57-4c7a-4d07-9795-307f512792cd): (B 502, W 509), W+7, -1
+2016-04-25 05:24:14.627018: "cpp-onemove" vs "cpp-mcts" (4530f022-95be-46ab-b9e9-595d42c628d8): (B 604, W 337), B+267, -1
+2016-04-25 05:31:01.754858: "cpp-mcts" vs "cpp-onemove" (f0a4c7d1-1a7f-44e0-892a-0499ef909f34): (B 262, W 749), W+487, -1
+2016-04-25 05:37:27.760366: "cpp-onemove" vs "cpp-mcts" (1630cc5f-e765-4669-b776-f42404bf8376): (B 560, W 377), B+183, -1
+2016-04-25 05:44:12.741875: "cpp-mcts" vs "cpp-onemove" (a30f8c5d-2914-49ed-b000-47a2f4b14895): (B 450, W 527), W+77, -1
+2016-04-25 05:51:04.149239: "cpp-onemove" vs "cpp-mcts" (ebeb06e5-a1da-4db8-b1e2-a81e6ffbfcea): (B 540, W 481), B+59, -1
+2016-04-25 05:58:12.749956: "cpp-mcts" vs "cpp-onemove" (55952233-2867-46e2-aac6-097cf1302764): (B 434, W 613), W+179, -1
+2016-04-25 06:04:42.335538: "cpp-onemove" vs "cpp-mcts" (90526fe8-5c93-41cc-a3e4-01e17d9d2c85): (B 556, W 385), B+171, -1
+2016-04-25 06:11:25.974347: "cpp-mcts" vs "cpp-onemove" (f835abc6-1588-4bc5-a4a6-b84da01634d2): (B 296, W 683), W+387, -1
+2016-04-25 06:18:18.955671: "cpp-onemove" vs "cpp-mcts" (4741afe5-93f9-4298-a2d8-4d902405f442): (B 512, W 469), B+43, -1
+2016-04-25 06:25:27.403018: "cpp-mcts" vs "cpp-onemove" (863383c2-480e-46da-8525-b0bea2d1d3dd): (B 528, W 505), B+23, 1
+2016-04-25 06:32:40.479849: "cpp-onemove" vs "cpp-mcts" (6fa8a23f-488d-46d7-b0ac-009c25b98818): (B 454, W 583), W+129, 1
+2016-04-25 06:39:51.253457: "cpp-mcts" vs "cpp-onemove" (4db2cc02-02b6-49b4-a5fb-159326f04cfc): (B 362, W 667), W+305, -1
+2016-04-25 06:46:12.390172: "cpp-onemove" vs "cpp-mcts" (a4c0ba4f-8c39-4327-b587-59a711e4f3b3): (B 552, W 387), B+165, -1
+2016-04-25 06:54:39.660982: "cpp-mcts" vs "cpp-onemove" (d5f7da28-5af0-4218-a0a7-8880ac0988d1): (B 670, W 509), B+161, 1
+2016-04-25 07:01:49.768993: "cpp-onemove" vs "cpp-mcts" (db5e6403-2f61-40e5-aeab-fbd31d95fdce): (B 528, W 503), B+25, -1
+2016-04-25 07:08:20.702920: "cpp-mcts" vs "cpp-onemove" (bd7c6d1a-646c-4dd2-b3be-a4cec17dcdc1): (B 442, W 511), W+69, -1
+2016-04-25 07:14:49.829066: "cpp-onemove" vs "cpp-mcts" (2aeb5ed9-58a5-4268-ba35-6149a829cf99): (B 610, W 367), B+243, -1
+2016-04-25 07:22:13.612380: "cpp-mcts" vs "cpp-onemove" (a0ce148f-539d-4b9e-bd89-e7972da7926a): (B 380, W 693), W+313, -1
+2016-04-25 07:29:41.711963: "cpp-onemove" vs "cpp-mcts" (1d900dc7-4056-4c43-8be5-fb1b6eecfd22): (B 526, W 523), B+3, -1
+2016-04-25 07:36:28.372407: "cpp-mcts" vs "cpp-onemove" (0c88b3a1-d0ab-44f7-8d00-f087f9bdef49): (B 404, W 633), W+229, -1
+2016-04-25 07:44:18.016502: "cpp-onemove" vs "cpp-mcts" (c87b48f1-19f5-429b-a3df-a99c81f8ca74): (B 984, W 187), B+797, -1
+2016-04-25 07:50:59.483241: "cpp-mcts" vs "cpp-onemove" (efecedda-6f81-43a5-94ec-61b7dd4b5274): (B 408, W 573), W+165, -1
+2016-04-25 07:57:40.494552: "cpp-onemove" vs "cpp-mcts" (ac8ffdde-3fbc-4ce8-b77a-aef117e60d42): (B 688, W 301), B+387, -1
+2016-04-25 08:04:31.005220: "cpp-mcts" vs "cpp-onemove" (9488f4b5-d23a-4def-9b06-120924eb01e4): (B 394, W 595), W+201, -1
+2016-04-25 08:11:40.945946: "cpp-onemove" vs "cpp-mcts" (5fd4ecf7-196a-4c36-b506-ef82cf69868c): (B 604, W 429), B+175, -1
+2016-04-25 08:19:06.727194: "cpp-mcts" vs "cpp-onemove" (35f28bd0-50e8-4562-80d9-142323b9ec38): (B 530, W 537), W+7, -1
+2016-04-25 08:26:01.086163: "cpp-onemove" vs "cpp-mcts" (bfed241c-3852-45a1-913c-f525356f9097): (B 676, W 341), B+335, -1
+2016-04-25 08:33:42.992750: "cpp-mcts" vs "cpp-onemove" (3a38d136-b603-4c03-8534-6819650f7803): (B 266, W 875), W+609, -1
+2016-04-25 08:40:55.351714: "cpp-onemove" vs "cpp-mcts" (e0a4ae85-da8d-48a0-887d-3f1b970397bc): (B 660, W 389), B+271, -1
+2016-04-25 08:48:22.939451: "cpp-mcts" vs "cpp-onemove" (c1c39ac5-d530-4ac8-a8d4-7b01032ae534): (B 494, W 583), W+89, -1
+2016-04-25 08:55:36.139342: "cpp-onemove" vs "cpp-mcts" (9d2d1483-2939-4e50-b862-511ee9388698): (B 614, W 427), B+187, -1
+2016-04-25 09:02:08.514867: "cpp-mcts" vs "cpp-onemove" (0263470d-6b3e-4f09-8572-31857f9e939d): (B 436, W 499), W+63, -1
+2016-04-25 09:09:03.540366: "cpp-onemove" vs "cpp-mcts" (751abf1d-6e44-4637-a48a-c62c86c9c927): (B 540, W 465), B+75, -1
+2016-04-25 09:16:11.743386: "cpp-mcts" vs "cpp-onemove" (e4535f6a-dfa2-442a-946b-4ba3a8b3fb70): (B 488, W 515), W+27, -1
+2016-04-25 09:22:53.304226: "cpp-onemove" vs "cpp-mcts" (9f045b8f-434d-4567-a223-017ca9c8724a): (B 654, W 325), B+329, -1
+2016-04-25 09:29:26.060232: "cpp-mcts" vs "cpp-onemove" (53071a0b-3d80-4ea1-8bd0-8230713eaf15): (B 344, W 609), W+265, -1
+2016-04-25 09:36:11.741016: "cpp-onemove" vs "cpp-mcts" (bd35b8e7-fced-4629-a8e8-974433dee458): (B 622, W 369), B+253, -1
+2016-04-25 09:43:02.655686: "cpp-mcts" vs "cpp-onemove" (ebb8280f-0f4a-49db-a2a5-8fe9bee2ca05): (B 404, W 565), W+161, -1
+2016-04-25 09:49:53.374072: "cpp-onemove" vs "cpp-mcts" (8c35bffa-2e64-4839-9d90-694f7f0bbe44): (B 732, W 269), B+463, -1
+2016-04-25 09:57:02.968454: "cpp-mcts" vs "cpp-onemove" (6a421dd4-ceda-4ec1-ae9c-4e4b4f526b10): (B 368, W 657), W+289, -1
+2016-04-25 10:03:28.327953: "cpp-onemove" vs "cpp-mcts" (667aa7cd-b442-4daa-8561-986f3ffc3ab6): (B 552, W 387), B+165, -1
+2016-04-25 10:10:02.301380: "cpp-mcts" vs "cpp-onemove" (0aee2e72-8b46-43ed-9b6e-a1d2ea031bad): (B 462, W 509), W+47, -1
+2016-04-25 10:16:20.940943: "cpp-onemove" vs "cpp-mcts" (ff00b499-8b3f-4a70-be35-15897cf44eb8): (B 536, W 413), B+123, -1
+2016-04-25 10:23:10.749852: "cpp-mcts" vs "cpp-onemove" (94aa926b-7f45-419b-aed0-4e319f6ab0f9): (B 472, W 499), W+27, -1
+2016-04-25 10:30:54.114933: "cpp-onemove" vs "cpp-mcts" (5ed22329-8000-4876-a4ef-98ec169bdbef): (B 552, W 537), B+15, -1
+2016-04-25 10:41:49.623155: "cpp-onemove" vs "cpp-mcts" (3ed3a0e5-4e96-490d-8297-658c8b5f3e65): (B 624, W 337), B+287, -1
+2016-04-25 10:48:09.076600: "cpp-mcts" vs "cpp-onemove" (2d4cca6f-9a74-408f-961d-b3a9edc677b2): (B 328, W 589), W+261, -1
+2016-04-25 10:55:25.343554: "cpp-onemove" vs "cpp-mcts" (9ca6e81f-03fa-48f0-971e-3d94654c5dde): (B 698, W 389), B+309, -1
+2016-04-25 11:02:44.512781: "cpp-mcts" vs "cpp-onemove" (48c59593-8c1e-41df-b518-5804c0c63e09): (B 362, W 675), W+313, -1
+2016-04-25 11:10:06.273524: "cpp-onemove" vs "cpp-mcts" (50fd3791-5042-46fe-b3ef-92cf82023348): (B 584, W 475), B+109, -1
+2016-04-25 11:16:58.794642: "cpp-mcts" vs "cpp-onemove" (2dcae35d-bc68-4dd9-a44d-aa2f6809f94d): (B 452, W 555), W+103, -1
+2016-04-25 11:24:24.696020: "cpp-onemove" vs "cpp-mcts" (34eac55a-12f9-4e5e-9502-894b04db3f19): (B 588, W 465), B+123, -1
+2016-04-25 11:31:16.916490: "cpp-mcts" vs "cpp-onemove" (885a51b9-d8f5-4f66-a033-f0f353415601): (B 428, W 565), W+137, -1
+2016-04-25 11:38:27.224273: "cpp-onemove" vs "cpp-mcts" (4eaec54e-8665-46f1-a174-f2098f487fe4): (B 604, W 445), B+159, -1
+2016-04-25 11:46:10.077785: "cpp-mcts" vs "cpp-onemove" (c8f80601-0858-4c2c-b55b-7c2fa676459a): (B 646, W 459), B+187, 1
+2016-04-25 11:53:22.525940: "cpp-onemove" vs "cpp-mcts" (7458e1c6-d6dd-4303-9956-53bbb09dd762): (B 656, W 387), B+269, -1
+2016-04-25 12:00:44.417515: "cpp-mcts" vs "cpp-onemove" (8b546997-06ef-49fe-a02f-6ca765244ad5): (B 466, W 623), W+157, -1
+2016-04-25 12:07:56.749098: "cpp-onemove" vs "cpp-mcts" (577639d9-694d-4377-923f-9ea062732cff): (B 600, W 459), B+141, -1
+2016-04-25 12:14:57.473497: "cpp-mcts" vs "cpp-onemove" (34854798-018a-4f80-b16d-75410a66bf88): (B 260, W 769), W+509, -1
+2016-04-25 12:22:11.792716: "cpp-onemove" vs "cpp-mcts" (bcfef5a1-7318-47a2-bd6d-cbaf1dce898f): (B 600, W 429), B+171, -1
+2016-04-25 12:30:09.067087: "cpp-mcts" vs "cpp-onemove" (ee1cebce-0795-4616-a7e5-1d27be0a48a1): (B 232, W 943), W+711, -1
+2016-04-25 12:36:53.553427: "cpp-onemove" vs "cpp-mcts" (9b8b40ab-80e1-4cc0-b51b-5ebe93af797d): (B 584, W 419), B+165, -1
+2016-04-25 12:43:45.351994: "cpp-mcts" vs "cpp-onemove" (3871a995-0b04-463f-a8e6-9ea644ddcdf9): (B 432, W 577), W+145, -1
+2016-04-25 12:50:41.977818: "cpp-onemove" vs "cpp-mcts" (e93f3fd2-0fe3-404b-9422-c571314a264c): (B 588, W 429), B+159, -1
+2016-04-25 12:57:59.814518: "cpp-mcts" vs "cpp-onemove" (9deaa027-64b5-4c2c-a966-2fd2e26fc97c): (B 478, W 575), W+97, -1
+2016-04-25 13:04:37.156208: "cpp-onemove" vs "cpp-mcts" (9eec48f8-db49-4691-a2d6-0db691e67e51): (B 538, W 417), B+121, -1
+2016-04-25 13:12:02.822054: "cpp-mcts" vs "cpp-onemove" (edddd303-e493-4b5b-a306-7a391654a43a): (B 622, W 459), B+163, 1
+2016-04-25 13:20:12.863763: "cpp-onemove" vs "cpp-mcts" (ba7d8dcb-2daf-42d7-830c-4d20faa925b7): (B 578, W 573), B+5, -1
+2016-04-25 13:27:44.079431: "cpp-mcts" vs "cpp-onemove" (933f99f2-beb8-48b9-bdd5-1bdf55ff378a): (B 660, W 409), B+251, 1
+2016-04-25 13:34:19.035645: "cpp-onemove" vs "cpp-mcts" (140d187d-f912-40a3-86c3-2235cb79130b): (B 556, W 399), B+157, -1
+2016-04-25 13:41:33.746921: "cpp-mcts" vs "cpp-onemove" (fbb38cdc-11e2-4571-a7b6-1ea2f13a3e30): (B 452, W 589), W+137, -1
+2016-04-25 13:48:56.811227: "cpp-onemove" vs "cpp-mcts" (6ee1ccfe-8b17-42c8-94e4-f1ce03201b82): (B 446, W 609), W+163, 1
+2016-04-25 13:56:39.886630: "cpp-mcts" vs "cpp-onemove" (9b2602a3-2993-4d67-b664-ad432cdf6817): (B 424, W 687), W+263, -1
+2016-04-25 14:03:19.849344: "cpp-onemove" vs "cpp-mcts" (15374b6a-ae0d-4887-a54a-9426c40eb9ac): (B 506, W 471), B+35, -1
+2016-04-25 14:10:44.656308: "cpp-mcts" vs "cpp-onemove" (ebb2c482-5886-4705-a954-bb26583ac958): (B 458, W 623), W+165, -1
+2016-04-25 14:17:31.059210: "cpp-onemove" vs "cpp-mcts" (b753cd01-9154-464a-825c-54009960d0ab): (B 554, W 423), B+131, -1
+2016-04-25 14:24:10.468207: "cpp-mcts" vs "cpp-onemove" (9c19bfd9-8613-4bfb-a60f-a17bf273e8b5): (B 298, W 687), W+389, -1
+2016-04-25 14:30:35.276781: "cpp-onemove" vs "cpp-mcts" (827afbec-4f7d-4757-b646-6ac4b9650613): (B 588, W 375), B+213, -1
+2016-04-25 14:37:05.485646: "cpp-mcts" vs "cpp-onemove" (a88fe2b1-c686-4d89-9002-524d7a45f25d): (B 426, W 547), W+121, -1
+2016-04-25 14:44:25.093920: "cpp-onemove" vs "cpp-mcts" (e381912e-380b-407b-88c0-7a3036739c11): (B 490, W 581), W+91, 1
+2016-04-25 14:51:29.206452: "cpp-mcts" vs "cpp-onemove" (dbba5d71-d1d8-4e93-87b0-8d08b3e38d14): (B 326, W 719), W+393, -1
+2016-04-25 14:58:21.441368: "cpp-onemove" vs "cpp-mcts" (4508aefd-ea25-423a-81cd-bc0266f01fa3): (B 548, W 453), B+95, -1
+2016-04-25 15:05:01.824242: "cpp-mcts" vs "cpp-onemove" (67932453-34b2-40d7-99d9-6147c4a69f4b): (B 420, W 571), W+151, -1
+2016-04-25 15:12:42.851690: "cpp-onemove" vs "cpp-mcts" (200d3747-2c3c-46f2-a51c-5736e56adefc): (B 768, W 339), B+429, -1
+2016-04-25 15:19:38.589763: "cpp-mcts" vs "cpp-onemove" (a256d351-7510-45c1-a330-1712cf7b69f3): (B 470, W 521), W+51, -1
+2016-04-25 15:26:26.323087: "cpp-onemove" vs "cpp-mcts" (d34ec65a-e5fa-4131-a216-c98f24923e99): (B 534, W 457), B+77, -1
+2016-04-25 15:32:50.065066: "cpp-mcts" vs "cpp-onemove" (a6092ec1-029c-4213-845c-e96d872c95f2): (B 292, W 697), W+405, -1
+2016-04-25 15:39:43.887868: "cpp-onemove" vs "cpp-mcts" (d99bc2cc-d419-4f34-96b6-39faa4ee904a): (B 540, W 447), B+93, -1
+2016-04-25 15:47:34.573694: "cpp-mcts" vs "cpp-onemove" (eba3dcd2-9f2e-48c8-a9f2-28b48e6e1d72): (B 568, W 563), B+5, 1
+2016-04-25 15:54:42.099054: "cpp-onemove" vs "cpp-mcts" (4e8aae3c-e4d1-4d33-9076-e06f096e17bb): (B 678, W 355), B+323, -1
+2016-04-25 16:01:37.822417: "cpp-mcts" vs "cpp-onemove" (b911f532-02c0-424c-b4f0-58c776a43df7): (B 368, W 673), W+305, -1
+2016-04-25 16:08:44.421421: "cpp-onemove" vs "cpp-mcts" (f9408022-a413-4888-8ae0-a7091a1eb2c2): (B 566, W 473), B+93, -1
+2016-04-25 16:14:54.958900: "cpp-mcts" vs "cpp-onemove" (208f04f0-0cb7-4950-979c-a50bf9bcc860): (B 444, W 475), W+31, -1
+2016-04-25 16:22:11.652163: "cpp-onemove" vs "cpp-mcts" (280ee2b1-ed40-4e5d-b268-2a89cff06793): (B 540, W 519), B+21, -1
+2016-04-25 16:29:02.036985: "cpp-mcts" vs "cpp-onemove" (ac430bba-ea2f-496c-bb72-d46601b2a0be): (B 430, W 599), W+169, -1
+2016-04-25 16:36:37.144199: "cpp-onemove" vs "cpp-mcts" (935e9504-c92f-412b-8cc7-1a746ce3d632): (B 882, W 235), B+647, -1
+2016-04-25 16:43:20.864422: "cpp-mcts" vs "cpp-onemove" (31985fe1-7106-456f-bc7a-27205b42a7fb): (B 430, W 551), W+121, -1
+2016-04-25 16:50:24.732764: "cpp-onemove" vs "cpp-mcts" (54c37122-f3b1-4ea3-bfc1-85586e333dd0): (B 560, W 481), B+79, -1
+2016-04-25 16:56:52.701752: "cpp-mcts" vs "cpp-onemove" (4900a8d9-2d0d-4292-8e18-efc7edd74b6a): (B 370, W 559), W+189, -1
+2016-04-25 17:04:15.040782: "cpp-onemove" vs "cpp-mcts" (17c1c24b-1cbb-4d2a-9df0-22f2f4356642): (B 806, W 277), B+529, -1
+2016-04-25 17:10:40.835596: "cpp-mcts" vs "cpp-onemove" (81d08fb1-2d34-4572-a9c5-6822d0347240): (B 302, W 645), W+343, -1
+2016-04-25 17:17:46.253748: "cpp-onemove" vs "cpp-mcts" (4b87ae7c-16cd-4953-b126-bedbd6b96f43): (B 792, W 273), B+519, -1
+2016-04-25 17:24:15.505537: "cpp-mcts" vs "cpp-onemove" (6036a5ca-1734-455f-aeb8-b471db0e7f3f): (B 368, W 573), W+205, -1
+2016-04-25 17:30:45.574410: "cpp-onemove" vs "cpp-mcts" (6af5a64d-470e-401e-91a7-38db8faeda8d): (B 640, W 305), B+335, -1
+2016-04-25 17:38:31.685221: "cpp-mcts" vs "cpp-onemove" (f047789d-057f-4def-bcd6-3cb325c8d6a5): (B 552, W 587), W+35, -1
+2016-04-25 17:45:53.226610: "cpp-onemove" vs "cpp-mcts" (b38eb8a7-22df-4286-b768-44be27e1a9e1): (B 580, W 479), B+101, -1
+2016-04-25 17:53:24.459627: "cpp-mcts" vs "cpp-onemove" (47ac195d-c892-4b9c-9791-3abb8d822242): (B 436, W 637), W+201, -1
+2016-04-25 18:00:47.253300: "cpp-onemove" vs "cpp-mcts" (066fd497-a330-4e55-8eb4-cf028cb2481c): (B 846, W 239), B+607, -1
+2016-04-25 18:08:19.102766: "cpp-mcts" vs "cpp-onemove" (fa793edc-0e3a-4c2a-8844-bac14c174fc1): (B 476, W 643), W+167, -1
+2016-04-25 18:15:19.482073: "cpp-onemove" vs "cpp-mcts" (2d0fd34a-b2ee-401f-9b72-da7c266f6b09): (B 654, W 385), B+269, -1
+2016-04-25 18:21:57.643240: "cpp-mcts" vs "cpp-onemove" (3947d3a4-c253-40bf-8f1c-22b15261c75a): (B 376, W 587), W+211, -1
+2016-04-25 18:28:49.108637: "cpp-onemove" vs "cpp-mcts" (6df1ba92-0eed-434d-bed6-6331065baf7e): (B 494, W 489), B+5, -1
+2016-04-25 18:35:31.878750: "cpp-mcts" vs "cpp-onemove" (eeed2481-32f0-47d1-bece-0a171b6a6e84): (B 296, W 671), W+375, -1
+2016-04-25 18:42:56.967084: "cpp-onemove" vs "cpp-mcts" (e469ff69-74c6-4e24-948f-0e7a171320e5): (B 804, W 285), B+519, -1
+2016-04-25 18:49:21.509002: "cpp-mcts" vs "cpp-onemove" (7214dee0-43a9-4bd8-a4f5-213655e6183a): (B 446, W 495), W+49, -1
+2016-04-25 18:56:26.218904: "cpp-onemove" vs "cpp-mcts" (7c6fb190-af86-40fa-9444-eacb5253af0b): (B 480, W 539), W+59, 1
+2016-04-25 19:02:54.030612: "cpp-mcts" vs "cpp-onemove" (1933d9aa-cfb5-4c3b-a84e-1c61329f69d4): (B 304, W 643), W+339, -1
+2016-04-25 19:09:40.832711: "cpp-onemove" vs "cpp-mcts" (9465d91e-a1f9-4c9d-815e-82786124ab25): (B 616, W 383), B+233, -1
+2016-04-25 19:16:30.040342: "cpp-mcts" vs "cpp-onemove" (612c4842-e4e0-4264-85cc-19f8067d8d19): (B 316, W 667), W+351, -1
+2016-04-25 19:23:28.796862: "cpp-onemove" vs "cpp-mcts" (500f1f50-905e-4e8c-b62a-931b9f6dc8f5): (B 570, W 453), B+117, -1
+2016-04-25 19:30:21.246681: "cpp-mcts" vs "cpp-onemove" (939c68b0-0eb8-48b0-a655-f008eb14b5ca): (B 318, W 695), W+377, -1
+2016-04-25 19:37:20.875824: "cpp-onemove" vs "cpp-mcts" (41e86100-66c1-4c8d-9d22-d199b5b05798): (B 522, W 489), B+33, -1
+2016-04-25 19:44:28.263491: "cpp-mcts" vs "cpp-onemove" (64c98d31-4777-4685-95d1-db3015f19995): (B 376, W 643), W+267, -1
+2016-04-25 19:51:15.056061: "cpp-onemove" vs "cpp-mcts" (b7a9ef81-287e-4fa1-b56a-b93ba9603d37): (B 642, W 383), B+259, -1
+2016-04-25 19:57:48.495698: "cpp-mcts" vs "cpp-onemove" (41597990-1e76-4ce0-b266-b15096ab5e3d): (B 492, W 483), B+9, 1
+2016-04-25 20:04:20.966741: "cpp-onemove" vs "cpp-mcts" (be56f94b-ae15-4cc7-aaa2-ef6c77c8164c): (B 606, W 353), B+253, -1
+2016-04-25 20:10:55.626369: "cpp-mcts" vs "cpp-onemove" (bf6289e5-38f7-4520-96e2-f95fbc9e48c4): (B 424, W 537), W+113, -1
+2016-04-25 20:18:39.409545: "cpp-onemove" vs "cpp-mcts" (f7d8cd8a-fd92-4eb0-976d-4594e0e9d9dc): (B 572, W 533), B+39, -1
+2016-04-25 20:25:29.776094: "cpp-mcts" vs "cpp-onemove" (618ee12b-f5cd-4f3e-ab3a-7c0a760ddd40): (B 350, W 667), W+317, -1
+2016-04-25 20:32:27.936488: "cpp-onemove" vs "cpp-mcts" (0b70c34c-a517-426d-a76a-46369782df22): (B 826, W 225), B+601, -1
+2016-04-25 20:39:45.102318: "cpp-mcts" vs "cpp-onemove" (513f5292-efe9-4493-977f-fb53575b5c3e): (B 446, W 625), W+179, -1
+2016-04-25 20:47:17.045497: "cpp-onemove" vs "cpp-mcts" (6f824880-a46b-41bd-a810-fb6ea1ff2491): (B 614, W 479), B+135, -1
+2016-04-25 20:55:12.939477: "cpp-mcts" vs "cpp-onemove" (abacedb3-6aed-4ffd-9cc5-701d2a59c5e4): (B 344, W 793), W+449, -1
+2016-04-25 21:01:55.644267: "cpp-onemove" vs "cpp-mcts" (96c7845a-a5e9-4b73-b582-141143463dea): (B 650, W 335), B+315, -1
+2016-04-25 21:07:50.846984: "cpp-mcts" vs "cpp-onemove" (e4bb37c7-8bc7-48ca-984f-f81224728ab0): (B 344, W 553), W+209, -1
+2016-04-25 21:15:07.697665: "cpp-onemove" vs "cpp-mcts" (3f94e6d3-ffbe-42e8-bda1-a5aa1b0be34a): (B 666, W 389), B+277, -1
+2016-04-25 21:21:58.497029: "cpp-mcts" vs "cpp-onemove" (a65854cb-615c-4cc1-8b8d-f784bb2cf898): (B 348, W 659), W+311, -1
+2016-04-25 21:28:43.940030: "cpp-onemove" vs "cpp-mcts" (d2b95265-b741-46fe-915c-aa268a70c4b6): (B 632, W 353), B+279, -1
+2016-04-25 21:35:33.811976: "cpp-mcts" vs "cpp-onemove" (7e42d6a3-fd77-4aa7-9f79-d964111b8831): (B 306, W 693), W+387, -1
+2016-04-25 21:42:35.580720: "cpp-onemove" vs "cpp-mcts" (9008e1fa-9b5e-4ace-b435-6d1cde42f59c): (B 690, W 311), B+379, -1
+2016-04-25 21:49:42.747440: "cpp-mcts" vs "cpp-onemove" (c617c9db-6bf8-455d-bcb5-bc1eed7051b2): (B 426, W 599), W+173, -1
+2016-04-25 21:56:22.467426: "cpp-onemove" vs "cpp-mcts" (406c32a9-d72a-49f3-911a-7618a8edf607): (B 512, W 447), B+65, -1
+2016-04-25 22:03:57.736149: "cpp-mcts" vs "cpp-onemove" (e414ca7b-2d1a-4b14-b2fa-119cc9b0731a): (B 472, W 615), W+143, -1
+2016-04-25 22:11:30.829871: "cpp-onemove" vs "cpp-mcts" (607fcf94-4c91-4196-8695-551e50fb0b5c): (B 524, W 573), W+49, 1
+2016-04-25 22:18:50.664228: "cpp-mcts" vs "cpp-onemove" (04883f9b-2dda-4317-ad9b-983ba0a59f92): (B 320, W 735), W+415, -1
+2016-04-25 22:26:10.832577: "cpp-onemove" vs "cpp-mcts" (1e57ac8a-5eed-4aac-8acf-2b138b9bad27): (B 630, W 411), B+219, -1
+2016-04-25 22:33:22.685260: "cpp-mcts" vs "cpp-onemove" (7cd00c7d-9083-4865-afa7-0374e3d53b80): (B 308, W 735), W+427, -1
+2016-04-25 22:40:43.880673: "cpp-onemove" vs "cpp-mcts" (08c5bc9a-503a-406e-83de-d7890980b084): (B 738, W 327), B+411, -1
+2016-04-26 14:07:40.144533: "cpp-mcts" vs "cpp-onemove" (0efc7627-7b53-4172-9d4e-9d37846df060): (B 282, W 683), W+401, -1
+2016-04-26 14:08:05.417390: "cpp-onemove" vs "cpp-mcts" (154efc23-bb6b-4da4-83d0-bffb54ae4a72): (B 722, W 317), B+405, -1
+2016-04-26 14:13:56.900898: "cpp-mcts" vs "cpp-onemove" (b5b069bf-c302-412c-9fd6-b14e6bac0e4f): (B 332, W 629), W+297, -1
+2016-04-26 14:14:45.189548: "cpp-onemove" vs "cpp-mcts" (8c3beb96-5b6d-438e-a3f9-721a34788265): (B 582, W 427), B+155, -1
+2016-04-26 14:21:06.460426: "cpp-mcts" vs "cpp-onemove" (dfcb3950-55c1-4672-8977-fc63d3736aa5): (B 480, W 619), W+139, -1
+2016-04-26 14:22:11.115136: "cpp-onemove" vs "cpp-mcts" (819f37b5-1058-46d4-9be9-fd4ddb7671f0): (B 766, W 359), B+407, -1
+2016-04-26 14:27:14.444624: "cpp-mcts" vs "cpp-onemove" (be210c63-e527-4f71-bf76-20f13b8316f6): (B 372, W 595), W+223, -1
+2016-04-26 14:29:38.978493: "cpp-onemove" vs "cpp-mcts" (46a2563e-7db1-478f-b89d-8e608a4446d8): (B 858, W 299), B+559, -1
+2016-04-26 14:33:52.250079: "cpp-mcts" vs "cpp-onemove" (200ef541-4bfa-44fa-a271-21edf9e1a17d): (B 498, W 523), W+25, -1
+2016-04-26 14:36:26.109871: "cpp-onemove" vs "cpp-mcts" (65c5f622-3b67-43f2-9b4a-8252b798009a): (B 660, W 397), B+263, -1
+2016-04-26 14:40:15.932427: "cpp-mcts" vs "cpp-onemove" (6bfd2c68-3bbe-45d3-a0e3-ac40f0e6c6ad): (B 366, W 619), W+253, -1
+2016-04-26 14:42:42.887564: "cpp-onemove" vs "cpp-mcts" (82c629ad-b0e5-4a40-b89d-959c8418b621): (B 574, W 419), B+155, -1
+2016-04-26 14:46:36.261567: "cpp-mcts" vs "cpp-onemove" (11061bfe-bba1-46ed-a190-65147ef4a57b): (B 508, W 453), B+55, 1
+2016-04-26 14:49:07.427965: "cpp-onemove" vs "cpp-mcts" (aa5f7b8a-03db-4a94-8421-df3fa51810b3): (B 608, W 381), B+227, -1
+2016-04-26 14:52:59.506400: "cpp-mcts" vs "cpp-onemove" (d369dee9-6149-4b50-9b58-0f65d2737ec2): (B 304, W 703), W+399, -1
+2016-04-26 14:55:42.335748: "cpp-onemove" vs "cpp-mcts" (7d830eb0-2ef4-4489-9d53-ad4ade3f489f): (B 692, W 337), B+355, -1
+2016-04-26 14:59:21.352951: "cpp-mcts" vs "cpp-onemove" (8a4016c6-7853-4709-bdce-ae038b10ec65): (B 314, W 689), W+375, -1
+2016-04-26 15:02:40.549008: "cpp-onemove" vs "cpp-mcts" (4f074c1f-5479-40c4-9143-cac39ab3aece): (B 770, W 333), B+437, -1
+2016-04-26 15:05:28.810995: "cpp-mcts" vs "cpp-onemove" (b441e952-0422-4934-afc3-d9f2226ea859): (B 346, W 625), W+279, -1
+2016-04-26 15:15:40.028645: "cpp-onemove" vs "cpp-mcts" (a1ba4e81-b909-4501-9c96-d754ad692d08): (B 646, W 413), B+233, -1
+2016-04-26 15:15:42.035542: "cpp-mcts" vs "cpp-onemove" (916a96af-4c5e-4886-9ba3-80936d0cd041): (B 334, W 731), W+397, -1
+2016-04-26 15:21:56.102951: "cpp-onemove" vs "cpp-mcts" (3d5fd8fa-2f57-4fb8-b101-b897f8a45601): (B 590, W 377), B+213, -1
+2016-04-26 15:22:01.587061: "cpp-mcts" vs "cpp-onemove" (e6ecc2cb-d154-4d94-89db-6ac1cd70f65e): (B 432, W 521), W+89, -1
+2016-04-26 15:28:12.571260: "cpp-onemove" vs "cpp-mcts" (83fdf1ed-4d17-4f3a-a208-84edd50e85d5): (B 544, W 399), B+145, -1
+2016-04-26 15:28:56.178654: "cpp-mcts" vs "cpp-onemove" (add5fab8-9691-4176-8e9f-337bd05e44d1): (B 400, W 633), W+233, -1
+2016-04-26 15:35:01.287167: "cpp-mcts" vs "cpp-onemove" (43d58eab-3e82-4e13-bd2b-3965c41a8b52): (B 332, W 611), W+279, -1
+2016-04-26 15:35:05.265372: "cpp-onemove" vs "cpp-mcts" (8ddda68e-2bcd-420e-b551-35543c8a5ddd): (B 578, W 495), B+83, -1
+2016-04-26 15:41:04.757171: "cpp-onemove" vs "cpp-mcts" (f51c463e-6f56-4215-b1c7-8cd06a598ea8): (B 484, W 467), B+17, -1
+2016-04-26 15:41:39.475795: "cpp-mcts" vs "cpp-onemove" (a008f635-036d-46e6-86cc-dbe65017087b): (B 450, W 549), W+99, -1
+2016-04-26 15:47:59.162797: "cpp-onemove" vs "cpp-mcts" (8266969f-9d40-46ed-a198-50f94a4de4e8): (B 878, W 235), B+643, -1
+2016-04-26 15:48:55.102514: "cpp-mcts" vs "cpp-onemove" (91f29a9b-913d-49fa-a146-6f2f06e9fa4e): (B 562, W 509), B+53, 1
+2016-04-26 15:54:17.912311: "cpp-onemove" vs "cpp-mcts" (4ac3aa70-d1cd-4f61-b52b-e1bcb3f8a390): (B 636, W 355), B+281, -1
+2016-04-26 15:55:49.961695: "cpp-mcts" vs "cpp-onemove" (8f353fa4-b87b-4762-aa63-d934a11af872): (B 328, W 725), W+397, -1
+2016-04-26 16:00:35.069835: "cpp-onemove" vs "cpp-mcts" (72195140-bfac-4c05-86cb-abf76edc1cb0): (B 606, W 363), B+243, -1
+2016-04-26 16:02:23.953755: "cpp-mcts" vs "cpp-onemove" (7390f3a7-8804-4149-8902-16d4954d378b): (B 432, W 597), W+165, -1
+2016-04-26 16:08:08.425221: "cpp-onemove" vs "cpp-mcts" (ff289d38-2686-4a68-8e9e-474085bd6b46): (B 606, W 531), B+75, -1
+2016-04-26 16:08:22.834282: "cpp-mcts" vs "cpp-onemove" (c51dd6b9-bbb9-4232-9f4d-d505df3becea): (B 422, W 523), W+101, -1
+2016-04-26 16:14:23.642467: "cpp-onemove" vs "cpp-mcts" (08286a52-767a-4111-b540-d467ca72da95): (B 676, W 311), B+365, -1
+2016-04-26 16:14:27.391805: "cpp-mcts" vs "cpp-onemove" (b7d12913-f1c7-44ab-aaf5-26ca7207aae5): (B 406, W 549), W+143, -1
+2016-04-26 16:20:50.505389: "cpp-onemove" vs "cpp-mcts" (3033e358-1723-46ca-81b5-15774983e832): (B 494, W 485), B+9, -1
+2016-04-26 16:20:53.646651: "cpp-mcts" vs "cpp-onemove" (6607d4ea-926c-4199-b444-a63bc2eef1e8): (B 328, W 667), W+339, -1
+2016-04-26 16:27:11.980849: "cpp-mcts" vs "cpp-onemove" (c11453c2-5ab7-4e7d-8b57-a2de8d953f20): (B 268, W 749), W+481, -1
+2016-04-26 16:27:17.488752: "cpp-onemove" vs "cpp-mcts" (58be4895-8296-47bb-a8d4-14dd4c891c22): (B 566, W 419), B+147, -1
+2016-04-26 16:33:21.767832: "cpp-onemove" vs "cpp-mcts" (aab0ab95-485b-484a-96fc-3379071f8a6f): (B 578, W 369), B+209, -1
+2016-04-26 16:33:51.023495: "cpp-mcts" vs "cpp-onemove" (d8af403c-30b8-4e22-b693-0732f6b49256): (B 272, W 745), W+473, -1
+2016-04-26 16:39:56.454338: "cpp-onemove" vs "cpp-mcts" (ad07d6ae-5389-4062-b809-629bff0358c9): (B 436, W 565), W+129, 1
+2016-04-26 16:40:09.904536: "cpp-mcts" vs "cpp-onemove" (494c14b3-4c77-4507-a567-0fa4d8831289): (B 330, W 659), W+329, -1
+2016-04-26 16:46:36.546796: "cpp-onemove" vs "cpp-mcts" (21f07749-80c7-48ef-8a92-57bc6a0ead66): (B 640, W 413), B+227, -1
+2016-04-26 16:46:47.706069: "cpp-mcts" vs "cpp-onemove" (05e5669d-dc45-41d8-920a-c1a9e489e038): (B 372, W 661), W+289, -1
+2016-04-26 16:53:09.998773: "cpp-mcts" vs "cpp-onemove" (179c573e-0e1f-41f1-b601-c8b62a47a612): (B 510, W 493), B+17, 1
+2016-04-26 16:53:21.803827: "cpp-onemove" vs "cpp-mcts" (23786b3a-36b6-40dd-931d-1a7ef2c3fa31): (B 492, W 547), W+55, 1
+2016-04-26 16:59:33.304145: "cpp-mcts" vs "cpp-onemove" (9930f80c-6ce2-4d77-884c-307310866967): (B 394, W 553), W+159, -1
+2016-04-26 16:59:53.101026: "cpp-onemove" vs "cpp-mcts" (b55e0412-a428-4f11-a2ac-3645ba32801b): (B 558, W 487), B+71, -1
+2016-04-26 17:05:04.348592: "cpp-onemove" vs "cpp-mcts" (0d8bde07-aee6-440d-b4f4-7138f24720f8): (B 502, W 373), B+129, -1
+2016-04-26 17:05:57.371192: "cpp-mcts" vs "cpp-onemove" (cf5ade6b-8b75-4de0-8ea6-d90dcd696343): (B 430, W 535), W+105, -1
+2016-04-26 17:12:06.275295: "cpp-onemove" vs "cpp-mcts" (7f042e64-2ca2-4ad3-b0b8-28ee86abff70): (B 1012, W 129), B+883, -1
+2016-04-26 17:12:38.979203: "cpp-mcts" vs "cpp-onemove" (68a05cf1-f112-45cf-9478-ca7caab06f04): (B 302, W 735), W+433, -1
+2016-04-26 17:18:44.449649: "cpp-onemove" vs "cpp-mcts" (ca847f54-aa69-4add-b024-86f0ab2a8643): (B 442, W 563), W+121, 1
+2016-04-26 17:19:02.796822: "cpp-mcts" vs "cpp-onemove" (8317f9b1-3621-4d5e-856b-5736861c0fe5): (B 362, W 619), W+257, -1
+2016-04-26 17:38:05.240371: "cpp-mcts4" vs "cpp-mcts2" (94b33d7b-ba35-4c06-9284-f3648fbb1d47): (B 552, W 613), W+61, 1
+2016-04-26 17:48:32.534769: "cpp-mcts6" vs "cpp-mcts2" (aefd4b2b-f5ce-4df3-b469-9e36478d06b7): (B 580, W 421), B+159, -1
+2016-04-26 17:58:04.807786: "cpp-mcts4" vs "cpp-mcts" (20cf0c47-bcc4-456d-859a-3becdf3e7d7b): (B 384, W 527), W+143, -1
+2016-04-26 18:10:44.014620: "cpp-mcts6" vs "cpp-mcts4" (3330f0c9-b641-45ea-bbe0-94693072023c): (B 352, W 643), W+291, 1
+2016-04-26 18:18:23.636587: "cpp-mcts" vs "cpp-onemove" (fa7fb62b-db9b-4806-a843-30a9cef072bf): (B 640, W 509), B+131, 1
+2016-04-26 18:21:59.223256: "cpp-mcts2" vs "cpp-mcts" (3c1bdec1-d607-492e-8aa1-cbbfde39c3cc): (B 766, W 309), B+457, -1
+2016-04-26 18:28:03.586038: "cpp-mcts6" vs "cpp-onemove" (476a080e-972a-4612-b39b-25a1de95fa77): (B 414, W 553), W+139, -1
+2016-04-26 18:37:51.630986: "cpp-mcts4" vs "cpp-mcts" (fd8796bf-47b8-4630-9d44-1a1522510697): (B 544, W 385), B+159, 1
+2016-04-26 18:39:26.515786: "cpp-mcts4" vs "cpp-mcts" (be032773-be01-4002-84b0-f948f02248d8): (B 602, W 483), B+119, 1
+2016-04-26 18:44:17.024851: "cpp-mcts2" vs "cpp-onemove" (435f9069-7016-4055-97e4-577693ac86d9): (B 318, W 679), W+361, -1
+2016-04-26 18:46:02.899159: "cpp-mcts" vs "cpp-onemove" (45a61d74-6609-4991-a191-d8328503b7af): (B 424, W 623), W+199, 1
+2016-04-26 18:46:03.318273: "cpp-mcts" vs "cpp-onemove" (eea58933-7b1c-469f-93e2-aef721ed29d2): (B 592, W 401), B+191, -1
+2016-04-26 18:49:57.639609: "cpp-mcts2" vs "cpp-mcts" (53b75d8d-d51e-4b9c-b6a4-d8c9d065d5c5): (B 608, W 407), B+201, 1
+2016-04-26 20:23:25.552731: "cpp-mcts6" vs "cpp-mcts" (5f0cbd84-db8b-4136-af03-afc85345b68c): (B 536, W 459), B+77, 1
+2016-04-26 20:33:25.618541: "cpp-mcts6" vs "cpp-mcts" (cd1e01ed-072e-4558-bf5b-f1644f92b8f3): (B 362, W 595), W+233, 1
+2016-04-26 20:40:08.943089: "cpp-mcts" vs "cpp-onemove" (26061b71-f731-4cf4-afe6-a650650e3200): (B 482, W 565), W+83, -1
+2016-04-26 21:01:31.506955: "cpp-mcts6" vs "cpp-mcts4" (c8c6eae4-9253-481c-bf4a-b0589ede36bd): (B 798, W 275), B+523, 1
+2016-04-26 21:08:49.603443: "cpp-mcts" vs "cpp-onemove" (779399c3-ea26-472b-8755-da244d691809): (B 324, W 825), W+501, 1
+2016-04-26 21:13:24.990863: "cpp-mcts4" vs "cpp-mcts" (c7d7cd4c-609f-4cf8-94ed-ea57e7dc0857): (B 450, W 679), W+229, -1
+2016-04-26 21:19:36.637509: "cpp-mcts" vs "cpp-onemove" (f81a21c3-329d-4ab8-bcd3-37f8f89d964d): (B 460, W 505), W+45, 1
+2016-04-26 21:23:43.396693: "cpp-mcts8" vs "cpp-mcts" (c624f519-bc6a-40fa-b1e7-1146e20d0599): (B 532, W 471), B+61, -1
+2016-04-26 21:35:06.195947: "cpp-mcts6" vs "cpp-mcts2" (d5665934-5e2d-4abe-9ed7-073a960cc33e): (B 608, W 485), B+123, 1
+2016-04-26 21:41:53.792525: "cpp-mcts" vs "cpp-onemove" (1d6184d8-51c7-4ad6-857d-be454e36ab59): (B 502, W 551), W+49, 1
+2016-04-26 21:52:18.678290: "cpp-mcts2" vs "cpp-onemove" (0162f49c-5c4b-4c40-bf6c-74022c512b30): (B 390, W 521), W+131, 1
+2016-04-26 21:58:37.288275: "cpp-mcts6" vs "cpp-mcts2" (a112a657-3722-408f-9c2a-8645f4d09b99): (B 158, W 993), W+835, 1
+2016-04-26 22:04:35.966028: "cpp-mcts6" vs "cpp-onemove" (9a14c913-28b5-45f8-922c-2f31c57c29c3): (B 384, W 549), W+165, 1
+2016-04-26 22:05:46.814023: "cpp-mcts4" vs "cpp-onemove" (1b4572c3-a47b-4ad0-bae1-b4784d905118): (B 492, W 467), B+25, 1
+2016-04-26 22:11:19.794949: "cpp-mcts" vs "cpp-onemove" (a17acca0-d29e-438a-986e-7c5bd5798a8b): (B 564, W 483), B+81, 1
+2016-04-26 22:14:41.588819: "cpp-mcts2" vs "cpp-mcts" (9026b090-6eb6-428c-ac32-308ef012708c): (B 466, W 515), W+49, -1
+2016-04-26 22:24:28.201665: "cpp-mcts8" vs "cpp-mcts2" (082110d5-33bf-4906-94f7-c546f5344757): (B 444, W 489), W+45, -1
+2016-04-26 22:30:56.996043: "cpp-mcts" vs "cpp-onemove" (50fcb9c7-6635-4a9d-8939-aced2248d998): (B 332, W 669), W+337, -1
+2016-04-26 22:31:13.436069: "cpp-mcts2" vs "cpp-onemove" (cd62877e-0f35-4c78-b1c2-38403f3eb3fe): (B 398, W 667), W+269, -1
+2016-04-26 22:35:24.353286: "cpp-mcts4" vs "cpp-mcts2" (d9cba9b9-9822-47c6-b28e-aa7b8e7ea171): (B 724, W 323), B+401, 1
+2016-04-26 22:37:15.837471: "cpp-mcts" vs "cpp-onemove" (c3e8884d-b6b0-4ca4-a8b3-be4c0c163c75): (B 262, W 745), W+483, -1
+2016-04-26 22:42:07.903997: "cpp-mcts" vs "cpp-onemove" (e6e56551-2b44-4ae8-826e-6ba1063b9fba): (B 380, W 653), W+273, -1
+2016-04-26 22:45:37.049290: "cpp-mcts4" vs "cpp-mcts2" (1a51dd4a-6410-4618-8c2a-8c9406d72727): (B 450, W 527), W+77, -1
+2016-04-26 22:48:57.938468: "cpp-mcts4" vs "cpp-onemove" (577e5d7b-f02f-44e3-9fdf-03d606208660): (B 402, W 653), W+251, -1
+2016-04-26 22:55:04.509545: "cpp-mcts8" vs "cpp-onemove" (37dddff6-e577-43b6-b97a-9a237ff8ec49): (B 378, W 549), W+171, -1
+2016-04-26 23:06:23.305458: "cpp-mcts8" vs "cpp-mcts2" (c805cc48-5fd9-4132-9959-c5cee8d8573b): (B 246, W 849), W+603, -1
+2016-04-26 23:13:05.110665: "cpp-mcts6" vs "cpp-onemove" (00cf02f6-3d18-491d-992d-22c2c59d71d3): (B 422, W 611), W+189, 1
+2016-04-26 23:19:33.976087: "cpp-mcts8" vs "cpp-onemove" (4070bbb7-86ae-4b7c-8443-0b165760d2e1): (B 328, W 631), W+303, 1
+2016-04-26 23:26:05.447379: "cpp-mcts2" vs "cpp-onemove" (0c72791d-f71a-4701-b17d-901f8d2e5b4d): (B 310, W 707), W+397, -1
+2016-04-26 23:30:42.534409: "cpp-mcts2" vs "cpp-mcts" (9471ebc4-e9fc-440f-8ba5-6104e1a188c3): (B 688, W 369), B+319, -1
+2016-04-26 23:36:56.601674: "cpp-mcts6" vs "cpp-mcts" (0637d7ea-6baf-4143-b5f5-27849fdd92d3): (B 268, W 753), W+485, 1
+2016-04-26 23:37:12.833684: "cpp-mcts" vs "cpp-onemove" (8f3672c6-ea12-480a-8e0d-6080d7d95abc): (B 412, W 627), W+215, -1
+2016-04-26 23:44:07.883105: "cpp-mcts8" vs "cpp-onemove" (b8d7fda8-f414-4783-89ec-0547240c63ce): (B 208, W 927), W+719, -1
+2016-04-26 23:54:00.205687: "cpp-mcts4" vs "cpp-mcts2" (5da4fe7f-959f-47bf-af0a-b592539b18de): (B 418, W 531), W+113, 1
+2016-04-27 00:00:42.395552: "cpp-mcts6" vs "cpp-onemove" (8870902e-887d-44c8-9e49-510a0f9afac1): (B 250, W 807), W+557, 1
+2016-04-27 00:06:52.312572: "cpp-mcts" vs "cpp-onemove" (cf0e20dc-e69a-46f5-928b-48d9348b7cf8): (B 372, W 597), W+225, 1
+2016-04-27 00:11:20.949377: "cpp-mcts6" vs "cpp-mcts2" (36d53601-99e9-4198-8872-9d22e3e6e58b): (B 476, W 553), W+77, 1
+2016-04-27 00:21:48.689759: "cpp-mcts2" vs "cpp-mcts" (7b2d7334-719b-4ba9-b15b-678aa346f1ca): (B 444, W 547), W+103, -1
+2016-04-27 00:22:35.208560: "cpp-mcts2" vs "cpp-mcts" (806e4ad5-e9e9-484d-9514-3346c5c49198): (B 480, W 601), W+121, 1
+2016-04-27 00:33:59.166213: "cpp-mcts6" vs "cpp-mcts4" (5667eec6-0475-418f-900e-0bab5c659829): (B 444, W 643), W+199, -1
+2016-04-27 00:43:57.102439: "cpp-mcts6" vs "cpp-mcts4" (45480d9a-258f-4fad-b8b0-076577ac1958): (B 462, W 497), W+35, -1

@@ -1,0 +1,66 @@
+<html>
+
+    <body>
+        <form id="gameconf" action=".{{
+            url_for('startGame') }}">
+              Your color:<br>
+                <input type="radio" name="color" value="0" checked>Black<br>
+                <input type="radio" name="color" value="1">White<br>
+            AI:<br>
+                <input type="radio" name="ai" value="no" checked>No AI<br>
+                <input type="radio" name="ai" value="0">One AI<br>
+                <input type="radio" name="ai" value="2">Two AIs<br>
+            B's name:
+                <input id='bname' type="text" name="bname" value="Black"><br>
+            W's name:
+                <input id='wname' type="text" name="wname" value="White"><br>
+
+            First AI Type:<br>
+                <select name="ai1">
+                {% for (name,ai) in ais %}
+                    <option value="{{ ai }}">{{ name }}</option>
+                {% endfor %}
+                </select><br>
+            Second AI Type:<br>
+                <select name="ai2">
+                {% for (name,ai) in ais %}
+                    <option value="{{ ai }}">{{ name }}</option>
+                {% endfor %}
+                </select><br>
+                <input type="submit" value="Submit">
+        </form>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src=".{{
+                url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
+        <script>
+            function updateNames() {
+                var values = {};
+                $('#gameconf :input').each(function() {
+                    if(this.type == "radio" && !this.checked) {
+                        return;
+                    }
+                    values[this.name] = $(this).val();
+                });
+                console.log(values);
+                var bActive = true,wActive = true;
+                if(values['ai'] == "2") {
+                    bActive = wActive = false;
+                } else if(values['ai'] == "0") {
+                    if(values['color'] == '1') {
+                        bActive = false;
+                    } else {
+                        wActive = false;
+                    }
+                }
+                console.log([bActive,wActive]);
+                $('#bname').attr("disabled",bActive ? null : "");
+                $('#wname').attr("disabled",wActive ? null : "");
+            }
+
+            $('#gameconf').change(updateNames);
+            updateNames();
+        </script>
+
+    </body>
+</html>

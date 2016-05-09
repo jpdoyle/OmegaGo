@@ -1,0 +1,9 @@
+[submodule "tiny-cnn"]
+	path = tiny-cnn
+	url = https://github.com/Ginto8/tiny-cnn.git
+[submodule "base-n"]
+	path = base-n
+	url = https://github.com/azawadzki/base-n.git
+[submodule "libsocket"]
+	path = sgf-parse/libsocket
+	url = https://github.com/dermesser/libsocket.git

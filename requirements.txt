@@ -1,0 +1,7 @@
+Flask==0.10.1
+Jinja2==2.8
+pip==8.1.1
+requests==2.9.1
+Werkzeug==0.11.5
+psutil==4.1.0
+flask-reverse-proxy==0.2.0.2

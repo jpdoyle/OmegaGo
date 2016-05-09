@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{{ bname }} vs {{ wname }}</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="..{{
+            url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
+    <script type="text/javascript" src="..{{
+            url_for('static', filename='wgo/wgo.js') }}"></script> <!-- linking WGo javascript -->
+    <script type="text/javascript">
+        var player = "{{ player }}";
+        var key = "{{ key }}";
+        var bname = "{{ bname }}";
+        var wname = "{{ wname }}";
+    </script>
+  </head>
+
+  <body>
+    <!-- Dropdown menu for selecting tool -->
+    <b>{{ bname }}</b> (B<span> | </span><span id='bhost'></span>) vs
+    <b>{{ wname }}</b> (W<span> | </span><span id='whost'></span>):
+    Started at {{ startTime }}<br/>
+    You are {{ player }}.
+    {% if other %}
+    <a href="{{ otherurl }}">Play {{ other }}</a>.
+    <a href="{{ spectateurl }}">Spectate</a>.
+    {% endif %}
+    <img id="loading" src="..{{
+            url_for('static', filename='images/loading.gif') }}" width="12"
+         height="12" style="display:none"><br/>
+    <span id="status"></span>
+    {% if other %}
+        <button id="pass" type="button" onclick="pass()">Pass</button>
+    {% endif %}
+    <div id="board">
+      <!-- board will go here -->
+    </div>
+	<script type="text/javascript" src="..{{
+            url_for('static', filename='goban.js') }}"></script>
+  </body>
+</html>
+

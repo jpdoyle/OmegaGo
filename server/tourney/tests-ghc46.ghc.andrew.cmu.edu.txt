@@ -1,0 +1,4 @@
+2016-05-03 11:18:44.891899: "Black" vs "White" (2e7e8b92-b96d-418d-8cad-12531e13adc1): (B None, W None), Crash, Crash
+2016-05-03 11:18:57.345563: "RandomBot" vs "RandomBot" (ca3528f7-d047-4d69-b29c-0498aa560c0a): (B None, W None), Crash, Crash
+2016-05-03 11:24:30.601170: "RandomBot" vs "RandomBot" (34ae03cb-91d6-442f-86d9-dbeb02269791): (B 486, W 531), W+45, RandomBot > RandomBot
+2016-05-03 11:29:37.275529: "RandomBot" vs "RandomBot" (63d6b934-7d67-46fe-998e-e255efd1b3ab): (B 426, W 599), W+173, RandomBot > RandomBot

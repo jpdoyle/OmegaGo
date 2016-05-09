@@ -1,0 +1,9 @@
+"cpp-mcts" vs "cpp-random" (457fcc74-15e2-4929-a05c-42aa81cf398d): (B 358, W 755), W+397, -1
+"cpp-mcts" vs "cpp-random" (0746d857-4fb4-4a3f-8679-8eacb679ed2e): (B 880, W 209), B+671, 1
+2016-04-24 18:32:44.238038: "cpp-onemove" vs "cpp-mcts" (1ed9bbbb-0227-4ec1-98bf-073bf7287ff8): (B 540, W 465), B+75, -1
+2016-04-26 17:56:02.536154: "cpp-mcts2" vs "cpp-onemove" (44f33e84-2ed9-44b5-b24d-7ba64d4d34ba): (B 450, W 581), W+131, -1
+2016-04-27 00:22:01.242729: "cpp-onemove" vs "cpp-random" (174b3561-353b-41c9-a90a-c6863727b6f5): (B 524, W 515), B+9, -1
+2016-04-27 00:22:05.089652: "cpp-onemove" vs "cpp-random" (a324b5e1-2054-477d-8233-a652109dcf1d): (B 594, W 483), B+111, -1
+2016-04-27 00:26:03.180398: "cpp-mcts" vs "cpp-onemove" (0ef6df86-20fe-4470-875b-c777b55909d2): (B 476, W 621), W+145, -1
+2016-04-27 00:38:51.456001: "cpp-mcts2" vs "cpp-onemove" (75c48262-7e06-4f6f-965b-044ac1d2c877): (B 424, W 595), W+171, -1
+2016-04-27 00:44:52.827178: "cpp-mcts4" vs "cpp-random" (aca4aca5-b2ab-4e70-b9e1-34d2307eae00): (B 468, W 429), B+39, 1
