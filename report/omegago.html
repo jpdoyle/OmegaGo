@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>OmegaGo</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="static/js/jquery.min.js"></script>
+		<script src="static/js/skel.min.js"></script>
+		<!-- <script src="js/skel-layers.min.js"></script> -->
+		<script src="static/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="static/css/skel.css" />
+			<link rel="stylesheet" href="static/css/style.css" />
+			<link rel="stylesheet" href="static/css/style-large.css" />
+		</noscript>
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<!-- <header id="header" class="alt"> -->
+			<!-- 	<h1><strong><a href="index.html">Spatial</a></strong> by Templated</h1> -->
+			<!-- 	<nav id="nav"> -->
+			<!-- 		<ul> -->
+			<!-- 			<li><a href="index.html">Home</a></li> -->
+			<!-- 			<li><a href="generic.html">Generic</a></li> -->
+			<!-- 			<li><a href="elements.html">Elements</a></li> -->
+			<!-- 		</ul> -->
+			<!-- 	</nav> -->
+			<!-- </header> -->
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>OmegaGo</h2>
+
+                                <p>Elastic, Highly Distributed Go AI
+                                Tournaments</p>
+
+                                <p>Rachel Kositsky and Joe Doyle</p>
+
+			</section>
+
+<section id="one" class="wrapper style1">
+                <header class="major">
+                </header>
+    <div class="container 100%">
+        <div class="row 80%">
+            <div class="3u 12u$(medium)">
+                <header class="major">
+                    <h2>Summary</h2>
+                </header>
+            </div>
+            <div class="8u$ 12u$(medium)" style="color:#000">
+
+                <p style="font-size:125%">
+
+                We developed a distributed system for running games of
+                Go between computation-intensive AIs. This system is
+                able to elastically use available computational
+                resources to run games between these AIs continuously.
+                Despite 15-213 finals limiting the available computers
+                in Gates, we ran about <strong>6000 games in the week
+                of May 3rd</strong>. As of Friday, May 6, we were
+                running <strong>35 active games</strong> (2 AIs per game)
+                with <strong>267 CPU threads across 36 computers</strong>.
+                </p>
+
+                <h3><a
+                        href="https://github.com/Ginto8/OmegaGo"><u>View
+                on Github</u></a></h3>
+                <h3><u><a href="https://jpdoyle.net/omegago/view">Watch the
+                            current tournament</a></u> or <u><a
+                        href="https://jpdoyle.net/omegago/go">Play
+                        against an AI!</a></u></h3>
+                <h3>(If your browser says "This connection is not
+                    secure", choose advanced -> continue anyway)</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="one" class="wrapper style1">
+    <div class="container 100%">
+        <div class="row 80%">
+            <div class="3u 12u$(medium)">
+                <header class="major">
+                    <h2>Results</h2>
+                </header>
+            </div>
+            <div class="8u$ 12u$(medium)" style="color:#000">
+                <p>
+                For this system, we developed 5 AIs, including
+                a <strong>lock-free parallel Monte-Carlo Tree
+                Search</strong>, <strong>Convolutional Neural
+                Networks (CNNs)</strong> trained on skilled
+                players, and <strong>Asynchronous-Policy Monte-Carlo
+                Tree Search (AP-MCTS)</strong>, which combines a CNN
+                with MCTS for improved search effectiveness. These AIs
+                were run on publically available computers at Carnegie
+                Mellon, and the CNNs were trained on the Latedays cluster.
+
+                </p>
+
+                <div class="image fit captioned">We analysed these
+                games to determine the relative win rate of each
+                pair of AIs:<br/>
+                <a href="static/images/winmatrix.png">
+                    <img src="static/images/winmatrix.png" alt=""
+                    /></a><br/>
+
+                Notably, <strong>MCTS with more search threads beats MCTS with
+                    fewer</strong>, and AP-MCTS is more effective
+                against other AIs than the corresponding MCTS. This is
+                also supported by the win-rate against One-Move
+                Search, which makes the move that immediately increases its
+                score by the most -- i.e., it makes the largest
+                capture it can, and plays a stone which encloses
+                territory if it can. <br/>
+                <a href="static/images/moreThreads.png">
+                    <img src="static/images/moreThreads.png" alt=""
+                    /></a><br/>
+                </div>
+
+                <div class="image fit captioned">Due to bugs in
+                feature processing, we had to restart training of the
+                CNNs on May 5. Since then, we have achieved above
+                <strong>27% prediction accuracy</strong> on samples of
+                the training dataset (AlphaGo improved the state of
+                the art from 44.4% to 57%):
+                <a href="static/images/training.png">
+                    <img src="static/images/training.png" alt="" />
+                    </a><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="two" class="wrapper style2 special">
+            <div class="container">
+                <header class="major">
+                    <h2>Approach</h2>
+                </header>
+                <div class="row 150%">
+
+<div style="float:none"><h2><u>AIs</u></h2></div>
+
+<div class="6u 12u$(xsmall)">
+    <div class="image fit captioned">
+        <h2>Lock-Free Parallel Monte-Carlo Tree Search</h2>
+        <div style="color:#000; text-align:left">
+            <ul>
+
+                <li>Uses random games to estimate the value of a given
+                move.</li>
+
+                <li>As a confirmation of effectiveness, MCTS AIs with more
+                search threads win with high probability against MCTS AIs
+                with fewer search threads.</li>
+
+                <li>Atomic updates of the tree are implemented with C++
+                std::atomic containers.</li>
+
+                <li>Each thread runs a greedy tree search, then plays
+                random moves until the end of the game. Once the game is
+                completed, the winner is decided and the thread moves
+                backwards through the tree, atomically updating the
+                expected value of each move until the current game state
+                is reached. Once a move is played a certain number of
+                times, a new node is allocated and inserted into the tree
+                with an atomic compare-and-swap.</li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div class="6u$ 12u$(xsmall)">
+    <div class="image fit captioned">
+
+        <h2>Convolutional Neural Networks</h2>
+        <div style="color:#000; text-align:left">
+            <ul>
+
+                <li>Implemented with tiny-cnn (A CPU-based neural network
+                library) for minimal dependencies, accelerated with SSE
+                vector instructions and OpenMP.</li>
+
+                <li>Designed to match the architecture and feature-set of
+                Google DeepMind's AlphaGo, with smaller size parameters in
+                consideration of the performance constraints of the chosen
+                library.</li>
+
+                <li>The input features are the same as published for
+                AlphaGo, except that the two features for tactical ladder
+                search is excluded. The layers of the network are (in
+                order):
+                <ul>
+                    <li>A 19x19x46 input layer which is fed a binary
+                    feature image, with 46 binary features extracted from
+                    each point on the board.</li>
+
+                    <li>A single convolutional layer with <i>k</i> 5x5
+                    filters, followed by a Rectified Linear Unit</li>
+
+                    <li><i>n</i> "inner" convolutional layers with
+                    <i>k</i> 3x3</li>
+
+                    <li>A convolutional layer with a single 1x1 filter,
+                    with biases for each point, followed by a softmax
+                    activation</li>
+                </ul></li>
+
+                <li>Trained from a collection of 70,000 skilled amateur games using
+                stochastic gradient descent with a minibatch size of 256,
+                alpha = 0.006. Each round of consisted of sampling 1024
+                random board states from the training set, followed 4
+                training minibatches. Training was done on Latedays
+                worker nodes</li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div style="float:none"><h2><u>Software Architecture</u></h2></div>
+<div class="6u 12u$(xsmall)">
+    <div class="image fit captioned">
+        <h2>Python Web Server</h2>
+        <div style="color:#000; text-align:left">
+            <ul>
+                <li>Hosts game logic, work distribution</li>
+                <li>Manages a C++ child process which implements game
+                logic -- communicates through standard input/output pipes.
+                </li>
+                <li>Allows a user to start new games with up to 2 AI
+                players.</li>
+                <li>Hosts the game state as the games are played.</li>
+                <li>Receives moves from workers as HTTP requests.</li>
+                <li>Sends board state to all players/spectators.</li>
+                <li>Queues and distributes AI tasks to available workers
+                when a new game is started.</li>
+            </ul>
+        </div>
+        <a href="static/images/architecture.png" class="image
+            fit"
+style="max-width:500px">
+        <img src="static/images/architecture.png" alt=""
+            />
+        </a>
+    </div>
+</div>
+
+<div class="6u 12u(xsmall)">
+    <div class="image fit captioned">
+
+        <h2>Elastic Worker Management</h2>
+        <div style="color:#000; text-align:left">
+            <ul>
+
+                <li>Each worker can be started with no intervention other
+                than starting a bash script.</li>
+
+                <li>All dependencies are downloaded and compiled
+                automatically -- the scripts only depend on git,
+                python2.7, virtualenv, cmake, and a C++11 compiler -- and
+                installation of Python and virtualenv are partially
+                automated for machines that have incompatible
+                versions.</li>
+
+                <li>Each worker detects how many available CPU threads and
+                how much RAM it has, and communicates this to the main
+                server (some resources are left out, to avoid totally
+                overloading each machine).</li>
+
+                <li>All worker processes run with niceness 19, so they
+                interfere minimally with other processes on the machine.</li>
+
+                <li>The server is resilient to workers disconnecting -- if
+                a worker does not send a status to the main server for 30
+                seconds, it is deleted from the worker pool.</li>
+
+                <li>The workers are resilient to server disconnects as
+                well -- if the server restarts, the worker's tasks die,
+                and the worker reconnects to the server to service new
+                tasks.</li>
+
+                <li>The server will spawn matches proportional to its
+                available resources, and thus can dynamically adapt to
+                changes in workforce.</li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+			<!-- Two -->
+<section id="two" class="wrapper style2 special">
+    <div class="container">
+        <header class="major">
+            <h2>Background</h2>
+        </header>
+        <div class="row 150%">
+            <div class="6u 12u$(xsmall)">
+                <div class="image fit captioned">
+                    <a href="static/images/pic02.jpg">
+                    <img src="static/images/pic02.jpg" alt="" />
+                    </a>
+
+    <p style="color:#000"><b>Go</b> is a total-knowledge two-player
+    board game focused on placing pieces to surround territory and
+    capture the opponent&rsquo;s pieces. Until recently, it has been
+    infeasible to create a strong Go AI because the branching factor
+    of the move tree is incredibly high, making exhaustive search, and
+    even A/B pruning, infeasible.</p>
+
+    </div>
+</div>
+
+<div class="6u$ 12u$(xsmall)">
+    <div class="image fit captioned">
+    <a href="static/images/mcts.png">
+    <img src="static/images/mcts.png" alt="" />
+    </a>
+
+    <p style="color:#000">The state of the art in computer Go has been
+    <b>Monte Carlo Tree Search</b>, a probabilistic method for move
+    evaluation which assigns an expected win rate to each move by
+    averaging the outcomes of random games from each move. Modern AIs
+    have begun using Convolutional Neural Networks to bias this search
+    and to estimate the value of a board state without needing to
+    traverse fully down the move tree. Google DeepMind&rsquo;s AlphaGo
+    software recently used this technique to repeatedly defeat some of
+    the best professional Go players in the world.
+    </p>
+
+        </div>
+    </div>
+</div>
+<div class="row 150%">
+    <div class="6u 12u$(xsmall)">
+        <div class="image fit captioned">
+            <a href="static/images/pic03.jpg">
+            <img src="static/images/pic03.jpg" alt="" />
+            </a>
+
+    <p style="color:#000"><b>Convolutional Neural Networks</b> are
+    commonly used for object recognition and other image processing
+    techniques where other algorithmic techniques are either
+    insufficient or too costly to develop. If large labelled datasets
+    are available, a CNN can provide a high level of precision with
+    comparatively little development time. Since a Go board can be
+    viewed as a 19x19 image with 3 possible values (black, white,
+    open) for each pixels, CNNs can operate on attributes of the
+    current board state like an image.</p>
+
+        </div>
+    </div>
+
+    <div class="6u$ 12u$(xsmall)">
+        <div class="image fit captioned">
+            <a href="static/images/policyDiagram.png">
+            <img src="static/images/policyDiagram.png" alt="" />
+            </a>
+
+            <p style="color:#000">A <strong>policy</strong> in the
+            context of MCTS is a function which takes in the current
+            board state and move history, and outputs a probability
+            distribution over possible next moves. If the policy is
+            computationally expensive, this distribution can used to
+            provide initial bias to the tree search. Otherwise, the
+            policy may be used to weight the random function during
+            the random-play stage of MCTS. For AlphaGo's APV-MCTS and
+            our AP-MCTS, CNNs with a final softmax layer act as the
+            primary policy weighting moves in the tree search. These
+            policies are executed asynchronously, and the MCTS weights
+            are updated atomically.
+
+            </p>
+
+        </div>
+    </div>
+
+
+</div>
+<img src="static/images/stateOfArt.png" class="image fit"
+style="max-width:800px;margin:auto; float:none" alt="" />
+
+    </div>
+</section>
+<section id="one" class="wrapper style1">
+					<div class="container 100%">
+						<div class="row 80%">
+							<div class="3u 12u$(medium)">
+								<header class="major">
+									<h2>Resources</h2>
+								</header>
+							</div>
+							<div class="8u$ 12u$(medium)">
+
+<ul> <li> <span>The
+        primary resource for this project is the paper
+    &ldquo;Mastering the game of Go with deep neural networks and tree
+search&rdquo; (</span>
+
+    <span> <a
+            href="https://www.google.com/url?q=http://www.nature.com/nature/journal/v529/n7587/pdf/nature16961.pdf&amp;sa=D&amp;ust=1459565122186000&amp;usg=AFQjCNHr6f4mZgM88-kZtLS0w_U2Zy5NNQ">http://www.nature.com/nature/journal/v529/n7587/pdf/nature16961.pdf</a>
+
+    </span>
+
+    <span>), which describes the implementation of Google&rsquo;s
+        AlphaGo. The citation is:</span>
+<ul> <li>
+    <span>&nbsp;</span>
+
+    <span>Silver, David, et al. &quot;Mastering the game of Go with
+        deep neural networks and tree search.&quot; </span>
+
+    <span>Nature</span>
+
+    <span>&nbsp;529.7587 (2016): 484-489.</span>
+
+    </li>
+</ul>
+    </li>
+<li> <span>We used <a
+        href="https://github.com/nyanp/tiny-cnn">tiny-cnn</a>
+        for neural network training and evaluation. This library is
+        accelerated with OpenMP and vector instructions, but it is not
+        particularly high-performance. However, this library is
+        extremely small and has no external dependencies, which made
+        it ideal for scaling out. Since we did not need any special
+        drivers or complicated dependencies, any AI could be run on
+        any machine with enough CPU threads and RAM.
+    </span>
+
+    </li>
+
+    <li> <span>WGo.js (</span>
+
+    <span> <a
+            href="https://www.google.com/url?q=http://wgo.waltheri.net/&amp;sa=D&amp;ust=1459565122187000&amp;usg=AFQjCNERucKF5gt6_Lp2tMkNUHzTxW56qw">http://wgo.waltheri.net/</a>
+
+    <span>) provided the main board interface for the web site.</span>
+
+    </li>
+
+    <li> <span>For training the CNN, we used a randomly selected
+        70,000-game subset of <a
+            href="http://www.u-go.net/gamerecords/">the 170,000-game
+            database of high-rank amateur games</a>
+
+    </li>
+
+    <li> <span>To manage workers and host the web
+        interface, we use Python and the micro-framework Flask.
+        Workers communicate with the server via the Python requests
+    library.</span>
+
+    </li>
+
+</ul>
+
+
+
+                                                        </div>
+						</div>
+					</div>
+				</section>
+
+                                <center>
+        <header class="major">
+            <h2><a href="omegago-proposal.html"><u>Proposal
+                        Page</u></a></h2>
+        </header>
+    </center>
+			<!-- Four -->
+				<section id="four" class="wrapper style3 special">
+					<div class="container">
+						<header class="major">
+<h2>OmegaGo: For when you can't afford Google.</h2>
+						</header>
+					</div>
+				</section>
+
+	</body>
+</html>

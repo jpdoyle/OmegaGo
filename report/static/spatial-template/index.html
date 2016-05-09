@@ -1,0 +1,569 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Spatial by TEMPLATED</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<!-- <script src="js/skel-layers.min.js"></script> -->
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-large.css" />
+		</noscript>
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<!-- <header id="header" class="alt"> -->
+			<!-- 	<h1><strong><a href="index.html">Spatial</a></strong> by Templated</h1> -->
+			<!-- 	<nav id="nav"> -->
+			<!-- 		<ul> -->
+			<!-- 			<li><a href="index.html">Home</a></li> -->
+			<!-- 			<li><a href="generic.html">Generic</a></li> -->
+			<!-- 			<li><a href="elements.html">Elements</a></li> -->
+			<!-- 		</ul> -->
+			<!-- 	</nav> -->
+			<!-- </header> -->
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>OmegaGo</h2>
+
+                                <p>Distributed, parallel Monte-Carlo
+                                Tree Search for the game of Go.</p>
+
+                                <p>Rachel Kositsky and Joe Doyle</p>
+
+			</section>
+
+			<!-- Two -->
+				<section id="two" class="wrapper style2 special">
+					<div class="container">
+						<header class="major">
+							<h2>Background</h2>
+						</header>
+						<div class="row 150%">
+							<div class="6u 12u$(xsmall)">
+								<div class="image fit captioned">
+									<img src="images/pic02.jpg" alt="" />
+
+    <p style="color:#000"><b>Go</b> is a total-knowledge two-player
+    board game focused on placing pieces to surround territory and
+    capture the opponent&rsquo;s pieces. Until recently, it has been
+    infeasible to create a strong Go AI because the branching factor
+    of the move tree is incredibly high, making exhaustive search, and
+    even A/B pruning, infeasible.</p>
+
+								</div>
+							</div>
+
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<img src="images/mcts.png" alt="" />
+
+    <p style="color:#000">The state of the art in computer Go
+    has been <b>Monte Carlo Tree Search</b>, a probabilistic method for
+    finding and evaluating move sequences by playing random games,
+    with the probabilities of each move given by some function of the
+    current board state. Modern AIs have begun using Convolutional
+    Neural Networks to assign these probabilities and estimate the
+    value of a board state without needing to traverse fully down the
+    move tree. Google DeepMind&rsquo;s AlphaGo software recently used
+    this technique to repeatedly defeat some of the best professional
+    Go players in the world.</p>
+
+								</div>
+							</div>
+                                                </div>
+						<div class="row 150%">
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<img src="images/pic03.jpg" alt="" />
+
+    <p style="color:#000"><b>Convolutional Neural Networks</b> are
+    commonly used for object recognition and other image processing
+    techniques where other algorithmic techniques are either
+    insufficient or too costly to develop. If large labelled datasets
+    are available, a CNN can provide a high level of precision with
+    comparatively little development time. Since a Go board can be
+    viewed as a 19x19 image with 3 possible values (black, white,
+    open) for each pixels, CNNs can operate on the current board state
+    as though it were an image.</p>
+
+								</div>
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned" style="color:#000">
+									<img src="" alt="" />
+
+<p> <h2>The three main parts of this project would
+    be:</h2>
+
+</p>
+
+<ol start="1"> <li>
+    <span>A simple web interface to allow a user to view the board
+    state and make moves.</span>
+
+    </li>
+
+    <li> <span>A master process, which aggregates the
+        results of the MCTS search and plays the best available move,
+    updating the web interface at the same time.</span>
+
+    </li>
+
+    <li> <span>An MCTS search system, which plays random
+        games and reports the results to the master process.</span>
+
+    </li>
+
+</ol>
+
+<p> <span> </span>
+
+</p>
+
+<p> <span>The main opportunities for parallelism are in the
+    MCTS search. The random games are independent of each other, and
+    thus can be distributed across multiple threads, or even across
+    different machines. The only data dependency across these threads
+    is the current board state, which can be sent to the search
+    threads asynchronously from the master process. There are still
+    opportunities to add sharing to minimize duplicate computation --
+    eg. sharing neural network outputs on specific board states,
+    marking branches with their current valuation to optionally bias
+    the random games, etc. Finally, CNN evaluation can be offloaded to
+    the GPU for increased parallelism.</span>
+
+</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- One -->
+				<section id="one" class="wrapper style1">
+					<div class="container 100%">
+						<div class="row 80%">
+							<div class="3u 12u$(medium)">
+								<header class="major">
+									<h2>The Challenge</h2>
+								</header>
+							</div>
+							<div class="8u$ 12u$(medium)">
+<span>Once the basic interface and single-thread MCTS are
+    implemented, the main challenges of this project will be:</span>
+
+</p>
+
+<ol start="1"> <li>
+    <span>Scaling MCTS to a large number of processors/machines in
+    such a way that the move evaluation becomes more accurate.</span>
+
+    <ul> <li class="c2
+        c4"> <span>As the scale increases, communication (possibly
+            including both inter-process and network-level communication) will
+            become an increasingly significant factor in performance</span>
+
+        </li>
+
+    </ul>
+
+    </li>
+
+</ol>
+
+
+<ol start="2"> <li>
+    <span>Avoiding excess work duplication during the MCTS
+    search</span>
+
+    <ul> <li class="c2
+        c4"> <span>We expect caching results of CNN evaluations will
+        improve performance</span>
+
+        </li>
+
+    </ul>
+
+    </li>
+
+</ol>
+
+
+
+<ol start="3"> <li>
+    <span>Training the neural network(s) and improving evaluation
+    correctness and speed.</span>
+
+    </li>
+
+    <li> <span>Optimizing the sequential MCTS performance
+        to maximize the number of random games played</span>
+
+    </li>
+
+</ol>
+
+<p> <span> </span>
+
+</p>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="one" class="wrapper style1">
+					<div class="container 100%">
+						<div class="row 80%">
+							<div class="3u 12u$(medium)">
+								<header class="major">
+									<h2>Resources</h2>
+								</header>
+							</div>
+							<div class="8u$ 12u$(medium)">
+
+<ul> <li> <span>The
+        primary resource for this project is the paper
+    &ldquo;Mastering the game of Go with deep neural networks and tree
+search&rdquo; (</span>
+
+    <span> <a
+            href="https://www.google.com/url?q=http://www.nature.com/nature/journal/v529/n7587/pdf/nature16961.pdf&amp;sa=D&amp;ust=1459565122186000&amp;usg=AFQjCNHr6f4mZgM88-kZtLS0w_U2Zy5NNQ">http://www.nature.com/nature/journal/v529/n7587/pdf/nature16961.pdf</a>
+
+    </span>
+
+    <span>), which describes the implementation of Google&rsquo;s
+        AlphaGo. The citation is:</span>
+<ul> <li>
+
+    <span>Silver, David, et al. &quot;Mastering the game of Go with
+        deep neural networks and tree search.&quot; </span>
+
+    <span>Nature</span>
+
+    <span>529.7587 (2016): 484-489.</span>
+
+    </li>
+</ul>
+    </li>
+<li> <span>Caffe
+        (</span>
+
+    <span> <a
+            href="https://www.google.com/url?q=https://github.com/BVLC/caffe&amp;sa=D&amp;ust=1459565122187000&amp;usg=AFQjCNGivY2VmDakSGBYYcF_GOq6w3uBgw">https://github.com/BVLC/caffe</a>
+
+    </span>
+
+    <span>) provides an easy-to-use framework for GPU-accelerating CNN
+        evaluation and training</span>
+
+    </li>
+
+    <li> <span>WGo.js (</span>
+
+    <span> <a
+            href="https://www.google.com/url?q=http://wgo.waltheri.net/&amp;sa=D&amp;ust=1459565122187000&amp;usg=AFQjCNERucKF5gt6_Lp2tMkNUHzTxW56qw">http://wgo.waltheri.net/</a>
+
+    </span>
+
+    <span>) and weiqi.js (</span>
+
+    <span> <a
+            href="https://www.google.com/url?q=https://github.com/cjlarose/weiqi.js&amp;sa=D&amp;ust=1459565122188000&amp;usg=AFQjCNH_qu2TKwVyaNN7OA9L1spnf84lwA">https://github.com/cjlarose/weiqi.js</a>
+
+    </span>
+
+    <span>) can simplify creating a simple web interface for this
+        project.</span>
+
+    </li>
+
+    <li> <span>Gobaum (</span>
+
+    <span> <a
+            href="https://www.google.com/url?q=https://github.com/asuz/Gobaum&amp;sa=D&amp;ust=1459565122188000&amp;usg=AFQjCNFsEnHfDHXwhAYBmgVcL6X8eU1O2g">https://github.com/asuz/Gobaum</a>
+
+    </span>
+
+    <span>) is a C++ library for working with SGF files (a
+        computer-readable format for Go game records), which can help
+    with CNN training.</span>
+
+    </li>
+
+    <li> <span>Existing projects (eg. </span>
+
+    <span> <a
+            href="https://www.google.com/url?q=https://github.com/bjin/go4ever/tree/master&amp;sa=D&amp;ust=1459565122189000&amp;usg=AFQjCNE9CH2rDGp7ER0SYUwFviBJTSK4ow">https://github.com/bjin/go4ever</a>
+
+    </span>
+
+    <span>)</span>
+
+    <span>can be used as a basis for implementing game rules and
+        protocols for connecting to online go servers.</span>
+
+    </li>
+
+    <li> <span>For training the CNN, there are many
+        available databases of Go game records -- </span>
+
+    <span> <a
+            href="https://www.google.com/url?q=http://www.u-go.net/gamerecords/&amp;sa=D&amp;ust=1459565122189000&amp;usg=AFQjCNGv-MshzLZTUAXsTMuCsXFc2Nv1PA">http://www.u-go.net/gamerecords/</a>
+
+    has ~170k records of games between skilled amateur
+        players, and <a
+            href="https://www.google.com/url?q=https://github.com/zenon/NNGS_SGF_Archive&amp;sa=D&amp;ust=1459565122190000&amp;usg=AFQjCNHpza8-tbSHVwbQltDi3Kug71hywA">https://github.com/zenon/NNGS_SGF_Archive</a>
+
+has ~430k game records from online amateur players of
+        various skill levels. The AlphaGo paper used 30 million game
+    positions from games played by high-skilled players for training.
+    </span>
+
+    </li>
+
+    <li> <span>To scale, we would like to distribute the
+        MCTS work over multiple machines</span>
+
+    </li>
+
+    <li> <span>To manage workers and host the web
+        interface, we will use Python and flask, a Python micro web
+    framework.</span>
+
+    </li>
+
+</ul>
+
+
+
+                                                        </div>
+						</div>
+					</div>
+				</section>
+
+	<section id="two" class="wrapper style2 special">
+					<div class="container">
+						<header class="major">
+							<h2>Goals and Deliverables</h2>
+						</header>
+						<div class="row 150%">
+							<div class="6u 12u$(xsmall)">
+								<div class="image fit captioned">
+									<img src="" alt="" />
+
+<h2>Plan to achieve:</h2>
+    <div style="color:#000; text-align:left">
+<ul> <li> <span>Our
+        overall goal is to produce an interactive Go playing program
+        that can play a legal game of Go with a human through a web
+        interface, and evaluates possible moves by parallel MCTS. The
+        tasks by project component are:</span>
+
+    </li>
+
+</ul>
+
+<ol start="1"> <li class="c2
+    c4"> <span>Web interface: Adapt an existing Javascript-based Go
+        interface to allow a user to view the board state and make
+        moves. The web interface will be run on a local computer
+        (CHECK) and be accessible through non-local clients. </span>
+
+    </li>
+
+    <li> <span>Master process: Implement communication
+        with web interface, aggregate the results of the MCTS search,
+        calculate best available move, and play the best available
+        move through web interface with a 30s/move time limit
+        (ideally, also test with a 10s/move time limit).</span>
+
+    </li>
+
+    <li> <span>MCTS search system: Implement a
+        multi-threaded MCTS search program in C++ to play random games
+        which plays random games and report the results to the master
+        process. An initial implementation can use a rough heuristic
+        without a neural network, but we expect to have neural network
+        evaluation in our final implementation</span>
+
+    </li>
+
+    <li> <span>Distribution: run MCTS search threads
+        across multiple machines.</span>
+
+    </li>
+
+</ol>
+
+
+</div>
+
+								</div>
+							</div>
+
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<img src="" alt="" />
+<h2>Hope to achieve:</h2>
+    <div style="color:#000; text-align:left">
+<ul> <li>
+    <span>Adapt the MCTS search system to improve the CNN with
+    reinforcement learning</span>
+
+    </li>
+
+    <li> <span>GPU-accelerate CNN evaluation (should be
+        feasible with existing library features)</span>
+
+    </li>
+
+    <li> <span>Asynchronously distribute CNN evaluation
+        results among search threads to minimize work
+    duplication</span>
+
+    </li>
+
+    <li> <span>Be able to beat very weak Go AIs (e.g.
+        EasyBot, KGS rank ~27k)</span>
+<ul> <li>
+    <span>Be able to beat Joe (KGS online rank 13k -- lower
+    &ldquo;k&rdquo; is better)</span>
+
+    </li>
+
+    <li> <span>Better yet, beat someone better than Joe
+        (i.e., someone ~4k, or a Go AI of similar rank)</span>
+
+    </li>
+
+    <li> <span>Almost impossibly, beat one of the top Go
+        AIs like Zen (6d, 6 ranks higher than 1k)</span>
+
+    </li>
+
+</ul>
+
+    </li>
+
+</ul>
+
+<p> <span> </span>
+
+</p>
+
+
+    </div>
+								</div>
+							</div>
+                                                </div>
+					</div>
+				</section>
+
+<section id="one" class="wrapper style1">
+					<div class="container 100%">
+						<div class="row 80%">
+							<div class="3u 12u$(medium)">
+								<header class="major">
+									<h2>Platform Choice</h2>
+								</header>
+							</div>
+							<div class="8u$ 12u$(medium)">
+
+
+<span>For the web frontend, Javascript is the only choice. For
+    the web server and the network layer (i.e. managing the
+    distributed MCTS search threads), we would like to use Python --
+    Flask makes web hosting and REST APIs extremely simple to
+    implement, and we expect that implementing the network layer in
+    Python will make work distribution much simpler to implement -- it
+    may be less efficient than a C++ implementation, but distributed
+    processing is error-prone, and we think that that a simpler
+    implementation with fewer bugs can make up for the overhead of
+Python. For the search threads themselves, we would like to use C++,
+to maximize performance.</span>
+
+</p>
+
+<p> <span>Ideally, we would like to parallelize the MCTS on
+    a cluster of machines. Latedays is not feasible for our main use
+    case because its execution model is job-oriented. We would prefer
+    to utilize a service like Amazon EC2, Microsoft Azure, or Google
+    Cloud, but we could also make use of a few GHC machines to do the
+    computation. We would prefer access to machines capable of GPU
+    acceleration of the neural network evaluation -- GHC machines
+    would be suitable, but since they are a shared resource we&rsquo;d
+    like to try other options as well.</span>
+
+</p>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+<section id="one" class="wrapper style1">
+					<div class="container 100%">
+						<div class="row 80%">
+							<div class="3u 12u$(medium)">
+								<header class="major">
+									<h2>Schedule</h2>
+								</header>
+							</div>
+							<div class="8u$ 12u$(medium)">
+<ul> <li>Fri, April 1st: Submit project proposal</li>
+
+
+<li>Fri, April 8th: Functional web interface and
+    initial versions of master process that plays random moves</li>
+
+<li>Fri, April 15th: Submit project checkpoint,
+    including single-threaded MCTS, proof-of-concept CNN (not fully
+trained, but MCTS probabilities are controlled by a CNN).</li>
+
+<li>Fri, April 22nd: Multi-threaded, distributed MCTS
+    on at least 2 machines, improved CNN training</li>
+
+<li>Fri, April 29th: Testing and CNN reinforcement
+    learning. Attempt to scale up to ~10 machines.</li>
+
+<li>Fri, May 6th: Complete project report</li>
+
+<li>Sun May 8th (3pm): Finalists announced,
+    presentation time sign ups</li>
+
+<li>Mon May 9th: Parallelism Competition
+    (8:30am-11:30am) / Final Report Due at 11:59pm</li>
+
+</ul>
+
+							</div>
+						</div>
+					</div>
+				</section>
+			<!-- Four -->
+				<section id="four" class="wrapper style3 special">
+					<div class="container">
+						<header class="major">
+							<h2>For when you can't afford Google.</h2>
+						</header>
+					</div>
+				</section>
+
+	</body>
+</html>
