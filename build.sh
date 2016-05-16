@@ -32,6 +32,8 @@ if ! [[ -e venv ]]; then
     wget https://bootstrap.pypa.io/get-pip.py
     python get-pip.py
     pip --version || exit -1
+else
+    . venv/bin/activate
 fi
 
 pip install -r requirements.txt
