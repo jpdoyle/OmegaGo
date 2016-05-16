@@ -21,22 +21,18 @@ if ! ($pycmd --version 2>&1 | grep '^Python 2\.7'); then
     exit -1
 fi
 
-venvpath=$VENV
-[[ -z "$venvpath" ]] && venvpath="virtualenv"
-if ! ($venvpath --version); then
+if ! [[ -e venv ]]; then
     echo
     echo "Grabbing virtualenv"
     echo
     wget https://raw.github.com/pypa/virtualenv/master/virtualenv.py
-    venvpath="$pycmd virtualenv.py"
-    $venvpath --version || exit -1
-fi
 
-if ! [[ -e venv ]]; then
-    $venvpath -p $pycmd venv
+    $pycmd virtualenv.py --no-setuptools --no-pip --no-wheel venv
+    . venv/bin/activate
+    wget https://bootstrap.pypa.io/get-pip.py
+    python get-pip.py
+    pip --version || exit -1
 fi
-
-. venv/bin/activate
 
 pip install -r requirements.txt
 
