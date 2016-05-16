@@ -16,7 +16,7 @@ if ! which $pycmd; then
     pycmd='python'
 fi
 
-if ! ($pycmd --version | grep 'Python 2.7'); then
+if ! ($pycmd --version 2>&1 | grep '^Python 2\.7'); then
     echo "Need python 2.7"
     exit -1
 fi
