@@ -23,7 +23,14 @@ fi
 
 venvpath=$VENV
 [[ -z "$venvpath" ]] && venvpath="virtualenv"
-$venvpath --version || (echo "Need virtualenv"; exit -1)
+if ! ($venvpath --version); then
+    echo
+    echo "Grabbing virtualenv"
+    echo
+    curl -O https://raw.github.com/pypa/virtualenv/master/virtualenv.py
+    venvpath="$pycmd virtualenv.py"
+    $venvpath --version || exit -1
+fi
 
 if ! [[ -e venv ]]; then
     $venvpath -p $pycmd venv

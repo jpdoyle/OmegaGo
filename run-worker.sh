@@ -2,7 +2,7 @@
 
 pushd $(dirname $0)
 
-. ./build.sh
+. ./build.sh || exit $?
 
 cd server;
 isDone=false
@@ -17,7 +17,7 @@ while ! $isDone; do
         git checkout master
 
         deactivate
-        . ./build.sh
+        . ./build.sh || exit $?
         popd
     else
         isDone=true
