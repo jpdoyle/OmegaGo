@@ -417,7 +417,7 @@ OS& operator<<(OS& os,const Board& b) {
         for(auto t: row) {
             char s[dig+1];
             os << " ";
-            auto digits = snprintf(s,sizeof(s),"%lu",t);
+            auto digits = snprintf(s,sizeof(s),"%u",(unsigned)t);
             if(digits < 0) {
                 s[0] = '\0';
                 digits = 0;
