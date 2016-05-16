@@ -38,6 +38,125 @@ void handler(int sig) {
     exit(1);
 }
 
+int evalPolicyNet(std::string filename,int argc,
+                   char* argv[]) {
+    using namespace tiny_cnn;
+    policy_net nn;
+    size_t numLayers = 1,numFilters = Features::NUM_CHANNELS*2;
+    if(argc >= 2 && std::string(argv[0]) == "--layers") {
+        try {
+            numLayers = std::stoi(argv[1]);
+        } catch(std::exception e) {}
+        argc -= 2;
+        argv += 2;
+    }
+    if(argc >= 2 && std::string(argv[0]) == "--filters") {
+        try {
+            numFilters = std::stoi(argv[1]);
+        } catch(std::exception e) {}
+        argc -= 2;
+        argv += 2;
+    }
+
+    std::cout << numLayers << " layers\n";
+    std::cout << "Weights file: " << filename << std::endl;
+    make_policy_net(nn,numLayers,numFilters);
+    std::cout << "Out dim: " << nn.out_dim() << std::endl;
+
+    {
+        std::ifstream nnFile(filename.c_str());
+        if(!nnFile) {
+            std::cout << "No net file\n";
+            return -1;
+        } else {
+            nnFile >> nn;
+        }
+    }
+
+    std::cout << "NN has " << nn.depth() << " layers\n";
+
+    constexpr decltype(Features().pack()) pack_obj = {};
+    constexpr size_t bytesPer = pack_obj.size();
+    constexpr size_t packSize = 19*19*bytesPer;
+
+    std::vector<vec_t> train_feats;
+    std::vector<label_t> train_moves;
+
+    for(int i = 0; i < argc; ++i) {
+        std::ifstream ifs(argv[i]);
+        std::vector<uint8_t> packed;
+        packed.reserve(packSize);
+        std::string packStr;
+        std::getline(ifs,packStr);
+        bn::decode_b64(packStr.begin(),packStr.end(),
+                   std::insert_iterator<std::vector<uint8_t>>(
+                       packed,packed.end()));
+        assert(packed.size() == packSize);
+
+        std::array<Features,19*19> feats;
+        auto it = packed.begin();
+        for(auto& f: feats) {
+            std::array<uint8_t,bytesPer> pack;
+            std::copy(it,it+bytesPer,pack.begin());
+            it += bytesPer;
+            f = Features(pack);
+        }
+        train_feats.push_back(vec_t());
+        convertToTCNNInput(feats,train_feats.back());
+
+        std::getline(ifs,packStr);
+        auto p = readCoord(makeStream(ifs));
+//        std::cout <<"coord " << p.first <<","<<p.second
+//                  << ": " <<IX(p) <<std::endl;
+        train_moves.push_back(IX(p));
+    }
+
+    for(size_t i = 0; i < train_feats.size(); ++i) {
+        auto output = nn.predict(train_feats[i]);
+        std::cout << "\n\n\nFile " << argv[i] << ":\n\n";
+        constexpr size_t precision = 4;
+        constexpr size_t width = precision+1;
+        for(size_t j = 0; j < width*21+1; ++j) {
+            std::cout << "#";
+        }
+        for(size_t y = 0; y < 19; ++y) {
+            std::cout << "\n";
+            for(size_t j = 0; j < width; ++j) {
+                std::cout << "#";
+            }
+            for(size_t x = 0; x < 19; ++x) {
+                auto val = output[IX({x,y})];
+                int cutoff = 1;
+                for(size_t j = 0; j < precision; ++j) {
+                    val *= 10;
+                    cutoff *= 10;
+                }
+                cutoff /= 10;
+                int percent = val + 0.5;
+                std::cout << " ";
+                while(cutoff > 1) {
+                    if(percent < cutoff) {
+                        std::cout << "0";
+                    }
+                    cutoff /= 10;
+                }
+                std::cout << percent;
+            }
+            std::cout << " ";
+            for(size_t j = 0; j < width; ++j) {
+                std::cout << "#";
+            }
+        }
+        std::cout << "\n";
+        for(size_t j = 0; j < width*21+1; ++j) {
+            std::cout << "#";
+        }
+    }
+    tiny_cnn::result res = nn.test(train_feats, train_moves);
+    std::cout << res.num_success << "/" << res.num_total << std::endl;
+    return 0;
+}
+
 int trainPolicyNet(bool justTest,std::string filename,int argc,
                    char* argv[]) {
     using namespace tiny_cnn;
@@ -552,6 +671,10 @@ int main(int argc,char* argv[]) {
                 assert(argc > 3);
                 filename = argv[3];
             }
+
+        } else if(filename == "--shownet") {
+            assert(argc > 3);
+            return evalPolicyNet(argv[2],argc-3,argv+3);
 
         } else if(filename == "--train" || filename == "--testnet") {
             assert(argc > 3);

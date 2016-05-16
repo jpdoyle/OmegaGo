@@ -446,7 +446,7 @@ Board::Move NeuralNetBot::getMove() {
     std::vector<double> sensibleVals;
     sensibleVals.assign(sensible.size(),0);
     const tiny_cnn::vec_t* weights = nullptr;
-    for(size_t i = 0; i < 8; ++i) {
+    for(size_t i = 0; i < 1; ++i) {
         weights = &nn.fprop(features[i]);
         for(size_t j = 0; j < sensible.size(); ++j) {
             auto ix = IX(dihedral(sensible[j],i));
@@ -454,6 +454,12 @@ Board::Move NeuralNetBot::getMove() {
         }
     }
 
+    size_t maxInd = 0;
+    for(size_t i = 1; i < sensible.size(); ++i) {
+        if(sensibleVals[i] > sensibleVals[maxInd]) {
+            maxInd = i;
+        }
+    }
     std::discrete_distribution<>
         dist(sensibleVals.begin(),sensibleVals.end());
     return {isBlack,false,sensible[dist(randEng)]};
