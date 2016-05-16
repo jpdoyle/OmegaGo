@@ -620,7 +620,8 @@ int main(int argc,char* argv[]) {
                 afs = (argv[3] == std::string("afs"));
                 int i = afs ? 3 : 4;
                 std::string path = afs ?
-                    "~/private/omegago/sgf-parse/build/sgfparse" :
+                    ("/afs/andrew.cmu.edu/usr17/jpdoyle"
+                     "/private/omegago/sgf-parse/build/sgfparse") :
                     argv[0];
                 for(; i < argc; ++i) {
                     try {
@@ -647,7 +648,8 @@ int main(int argc,char* argv[]) {
                     whichOne = std::stoi(argv[2]);
                 } catch(std::exception e) {}
             }
-            NeuralNetBot b("~/private/omegago/sgf-parse/build/sgfparse",whichOne);
+            NeuralNetBot b("/afs/andrew.cmu.edu/usr17/jpdoyle"
+                           "/private/omegago/sgf-parse/build/sgfparse",whichOne);
             b.run();
             return 0;
 

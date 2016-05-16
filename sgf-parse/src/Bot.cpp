@@ -409,6 +409,8 @@ Board::Move MonteCarloBot::getMove() {
 
 NeuralNetBot::NeuralNetBot(std::string basePath,int whichOne) {
     loadNN(nn,basePath,whichOne);
+    std::cerr << "NN has " << nn.depth() << " layers, " << nn.in_dim()
+              << " inputs and " << nn.out_dim() << " outputs\n";
 }
 
 void NeuralNetBot::newBoard(Board&& newB) {
@@ -423,13 +425,173 @@ void NeuralNetBot::newBoard(Board&& newB) {
         /* } */
     }
     assert(b);
+    std::cerr << "New board: " << *b << std::endl;
     sensibleMoves = b->blackToPlay ? &b->bSensibleMoves
                                    : &b->wSensibleMoves;
     std::array<Features,19*19> baseFeatures,oriented;
     extractFeatures(*b,baseFeatures);
     for(size_t i = 0; i < 8; ++i) {
         dihedralTranspose(baseFeatures,oriented,i);
-        convertToTCNNInput(oriented,features[i]);
+
+        {
+            auto& os2 = std::cerr;
+            auto& outFeats = oriented;
+            auto sym = i;
+            os2 << "Symmetry " << sym << ":\n";
+            os2 << "\nColors:\n";
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+            for(size_t y = 0; y < 19; ++y) {
+                os2 << "\n#";
+                for(size_t x = 0; x < 19; ++x) {
+                    auto f = outFeats[IX({x,y})];
+                    os2 << (f.color == EMPTY ? '_' :
+                            f.color == MINE  ? 'o' :
+                            /*f.color == ENEMY*/ '*');
+                }
+                os2 << "#";
+            }
+            os2 << "\n";
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+
+            os2 << "\n\nTurnsSince:\n";
+
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+            for(size_t y = 0; y < 19; ++y) {
+                os2 << "\n#";
+                for(size_t x = 0; x < 19; ++x) {
+                    auto f = outFeats[IX({x,y})];
+                    os2 << f.turnsSince;
+                }
+                os2 << "#";
+            }
+            os2 << "\n";
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+
+            os2 << "\n\nLiberties:\n";
+
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+            for(size_t y = 0; y < 19; ++y) {
+                os2 << "\n#";
+                for(size_t x = 0; x < 19; ++x) {
+                    auto f = outFeats[IX({x,y})];
+                    os2 << f.liberties;
+                }
+                os2 << "#";
+            }
+            os2 << "\n";
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+
+            os2 << "\n\nCaptureSize:\n";
+
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+            for(size_t y = 0; y < 19; ++y) {
+                os2 << "\n#";
+                for(size_t x = 0; x < 19; ++x) {
+                    auto f = outFeats[IX({x,y})];
+                    os2 << f.captureSize;
+                }
+                os2 << "#";
+            }
+            os2 << "\n";
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+
+            os2 << "\n\nSelfAtariSize:\n";
+
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+            for(size_t y = 0; y < 19; ++y) {
+                os2 << "\n#";
+                for(size_t x = 0; x < 19; ++x) {
+                    auto f = outFeats[IX({x,y})];
+                    os2 << f.selfAtariSize;
+                }
+                os2 << "#";
+            }
+            os2 << "\n";
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+
+            os2 << "\n\nLibertiesAfter:\n";
+
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+            for(size_t y = 0; y < 19; ++y) {
+                os2 << "\n#";
+                for(size_t x = 0; x < 19; ++x) {
+                    auto f = outFeats[IX({x,y})];
+                    os2 << f.libertiesAfter;
+                }
+                os2 << "#";
+            }
+            os2 << "\n";
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+
+            os2 << "\n\nSensible:\n";
+
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+            for(size_t y = 0; y < 19; ++y) {
+                os2 << "\n#";
+                for(size_t x = 0; x < 19; ++x) {
+                    auto f = outFeats[IX({x,y})];
+                    os2 << (f.sensible ? 'o' : '!');
+                }
+                os2 << "#";
+            }
+            os2 << "\n";
+            for(size_t i = 0; i < 21; ++i) {
+                os2 << '#';
+            }
+
+            tiny_cnn::vec_t& planes = features[i];
+            convertToTCNNInput(outFeats,planes);
+
+            os2 << "\n";
+            for(size_t i=0; i < Features::NUM_CHANNELS;++i) {
+                os2 << "\nPlane " << i << ":\n";
+                for(size_t i = 0; i < 21; ++i) {
+                    os2 << '#';
+                }
+                for(size_t y = 0; y < 19; ++y) {
+                    os2 << "\n#";
+                    for(size_t x = 0; x < 19; ++x) {
+                        bool on = (planes[i*outFeats.size() +
+                                IX({x,y})] >= 0.5);
+                        os2 << (on ? '*' : '.');
+                    }
+                    os2 << '#';
+                }
+                os2 << '\n';
+                for(size_t i = 0; i < 21; ++i) {
+                    os2 << '#';
+                }
+                os2 << '\n';
+            }
+
+        }
+
     }
 }
 
@@ -446,10 +608,13 @@ Board::Move NeuralNetBot::getMove() {
     std::vector<double> sensibleVals;
     sensibleVals.assign(sensible.size(),0);
     const tiny_cnn::vec_t* weights = nullptr;
-    for(size_t i = 0; i < 1; ++i) {
+    for(size_t i = 0; i < 8; ++i) {
         weights = &nn.fprop(features[i]);
         for(size_t j = 0; j < sensible.size(); ++j) {
             auto ix = IX(dihedral(sensible[j],i));
+            std::cerr << " <" << sensible[j].first << ","
+                      << sensible[j].second << "> @ " << i << ": "
+                      << ix << " -> " << (*weights)[ix] << std::endl;
             sensibleVals[j] += (*weights)[ix];
         }
     }
@@ -462,12 +627,9 @@ Board::Move NeuralNetBot::getMove() {
                   << std::endl;
     }
 
-    size_t maxInd = 0;
-    for(size_t i = 1; i < sensible.size(); ++i) {
-        if(sensibleVals[i] > sensibleVals[maxInd]) {
-            maxInd = i;
-        }
-    }
-    return {isBlack,false,sensible[maxInd]};
+    std::discrete_distribution<>
+        dist(sensibleVals.begin(),sensibleVals.end());
+
+    return {isBlack,false,sensible[dist(randEng)]};
 }
 

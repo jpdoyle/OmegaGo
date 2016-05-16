@@ -27,16 +27,22 @@ inline void loadNN(policy_net& nn,std::string basePath,int whichOne) {
 
     whichOne = std::min<int>(6,whichOne);
     int numLayers = whichOne;
+    int numFilters = Features::NUM_CHANNELS*2;
 
     if(numLayers <= 0) { // deep
-        make_policy_net(nn,11,Features::NUM_CHANNELS*4);
+        numFilters *= 2;
+        make_policy_net(nn,11,numFilters);
     } else {
-        make_policy_net(nn,numLayers,Features::NUM_CHANNELS*2);
+        make_policy_net(nn,numLayers,numFilters);
     }
 
     basePath = basePath.substr(0,basePath.find_last_of('/')+1);
+    std::string pathEnding = "";
+    if(basePath.back() != '/') {
+        pathEnding = "/";
+    }
     std::stringstream ss;
-    ss << basePath << "/../../nn";
+    ss << basePath << pathEnding << "../../nn";
     if(numLayers <= 0) {
         ss << "-deep";
     } else {
@@ -44,13 +50,15 @@ inline void loadNN(policy_net& nn,std::string basePath,int whichOne) {
     }
     ss << ".txt";
     std::cerr << "NN file: " << ss.str() << std::endl;
+    std::cerr << numLayers << " Layers, " << numFilters << " filters"
+              << std::endl;
 
-    for(size_t i = 0; i < 5; ++i) {
-        std::ifstream ifs(ss.str());
-        if(ifs >> nn) {
-            return;
-        }
+    std::ifstream ifs(ss.str().c_str());
+    if(!ifs) {
+        std::cerr << "COULDN'T OPEN '" << ss.str().c_str() << "'"
+                  << std::endl;
     }
+    ifs >> nn;
 }
 
 #endif
