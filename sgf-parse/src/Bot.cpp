@@ -415,12 +415,12 @@ void NeuralNetBot::newBoard(Board&& newB) {
     if(!b) {
         b.reset(new Board(newB));
     } else {
-        if(b->moveNumber + 1 == newB.moveNumber) {
-            b->playLegalMove(newB.lastMove.pt.first,
-                             newB.lastMove.pt.second);
-        } else {
-            *b = newB;
-        }
+        /* if(b->moveNumber + 1 == newB.moveNumber) { */
+        /*     b->playLegalMove(newB.lastMove.pt.first, */
+        /*                      newB.lastMove.pt.second); */
+        /* } else { */
+        *b = newB;
+        /* } */
     }
     assert(b);
     sensibleMoves = b->blackToPlay ? &b->bSensibleMoves
@@ -452,6 +452,14 @@ Board::Move NeuralNetBot::getMove() {
             auto ix = IX(dihedral(sensible[j],i));
             sensibleVals[j] += (*weights)[ix];
         }
+    }
+    std::cout << "My board: " << *b << std::endl;
+
+    std::cout << "Sensible moves: \n";
+    for(size_t i = 0; i < sensible.size(); ++i) {
+        std::cout << "   <" << sensible[i].first << ","
+                  << sensible[i].second << ">: " << sensibleVals[i]
+                  << std::endl;
     }
 
     size_t maxInd = 0;
