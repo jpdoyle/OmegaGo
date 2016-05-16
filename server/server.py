@@ -101,6 +101,8 @@ def refreshWorker(wid,data):
         for w,dat in workers.iteritems():
             if now - dat['lastUpdate'] >= timedelta(seconds=30):
                 toRemove.append(w)
+            if dat['host'] == data['host'] and w != wid:
+                toRemove.append(w)
 
         for w in toRemove:
             with queueLock:
