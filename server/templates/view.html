@@ -32,6 +32,8 @@
         {% endfor %}
         </table>
 
+        <h3>Server is at commit {{ version }}</h3>
+
         <h2>{{ workers|length }} Workers 
             ({{ (workers|map(attribute='4')|map('attr','cpuLoad')|sum
                 - workers|map(attribute='3')|map('attr','cpuLoad')|sum)
@@ -45,15 +47,17 @@
              }}/{{ workers|map(attribute='4')|map('attr','memLoad')
                 |sum|round(1)
              }} GBs of RAM)</h2>
+
         <ul>
-        {% for id,name,tasks,avail,maxAvail,running in
-        (workers|sort(attribute="1")) %}
+        {% for id,name,tasks,avail,maxAvail,running,commit in
+           (workers|sort(attribute="1")) %}
         <li>{{ name }}: {{ (maxAvail.cpuLoad - avail.cpuLoad)|round(1)
             }}/{{ maxAvail.cpuLoad|round(1) }}
             CPU threads, {{ (maxAvail.memLoad - avail.memLoad)|round(1)
             }}/{{ maxAvail.memLoad|round(1) }} GBs of RAM
             <ul>
                 <li>ID: {{ id }}</li>
+                <li>Commit: {{ commit }}</li>
                 <li>Can run: {% for t in tasks %}
                     {{ t }} |
                     {% endfor %}
@@ -66,6 +70,7 @@
             </ul>
         {% endfor %}
         </ul>
+
     </body>
 </html>
 
