@@ -27,7 +27,7 @@ if ! ($venvpath --version); then
     echo
     echo "Grabbing virtualenv"
     echo
-    curl -O https://raw.github.com/pypa/virtualenv/master/virtualenv.py
+    wget https://raw.github.com/pypa/virtualenv/master/virtualenv.py
     venvpath="$pycmd virtualenv.py"
     $venvpath --version || exit -1
 fi
