@@ -21,6 +21,7 @@ serverVersion = ''
 projroot = mypath + "/.."
 with open(projroot+"/.git/refs/heads/master") as f:
     serverVersion = f.read().rstrip()
+print "Server is at commit {}".format(serverVersion)
 
 os.nice(20)
 
@@ -451,7 +452,7 @@ def offerwork():
     maxLoad = data.get('maxAvail',[0,0])
     maxLoad = WorkerLoad(maxLoad[0],maxLoad[1])
     running = data.get('running',[])
-    version = data.get('head','')
+    version = data.get('version','')
 
     refreshWorker(workerId,{
         'id': workerId,
@@ -492,6 +493,8 @@ def offerwork():
             del tryingToStart[workerId]
 
     if version != serverVersion:
+        print "Server: {}".format(serverVersion)
+        print "Worker: {}".format(version)
         return json.jsonify({'newTasks':[],'update':True})
 
     newTasks = []
