@@ -9013,3 +9013,20 @@
 2016-05-16 11:22:47.197464: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (c663899a-15ab-4687-ab2f-46956db84ae7): (B 0, W 15), W+15, "Deep Neural network (11 inner layers)" > "Neural network (6 inner layers)"
 2016-05-16 11:24:30.038115: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (cfa18f83-f26d-45a1-bc8f-b0d9f5c0f318): (B 0, W 15), W+15, "Deep Neural network (11 inner layers)" > "Neural network (6 inner layers)"
 2016-05-16 11:25:47.327650: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (b9c54288-57c9-4b65-a9e7-0aec9ab1faf1): (B 0, W 15), W+15, "Deep Neural network (11 inner layers)" > "Neural network (6 inner layers)"
+2016-05-16 11:29:18.037384: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (d8a8b104-0103-447e-9fa3-6476dea78f2c): (B None, W None), Crash, Crash
+2016-05-16 11:31:46.536447: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (f1eadf02-2118-4f0c-8925-f2f0632cd3a5): (B None, W None), Crash, Crash
+2016-05-16 11:38:02.896666: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (a6fdccd9-bd3a-449c-924f-e945e91c27cd): (B None, W None), Crash, Crash
+2016-05-16 11:38:27.264466: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (20f10857-bcea-4339-8ed3-b81a9dfb6e8e): (B None, W None), Crash, Crash
+2016-05-16 11:47:51.444453: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (213fcc3e-585e-4843-bc28-e5cb5ec6e09f): (B None, W None), Crash, Crash
+2016-05-16 11:55:59.287907: "Black" vs "Neural network (6 inner layers)" (d9de4b8a-94fc-4534-ac1c-f405eea3ada7): (B None, W None), Crash, Crash
+2016-05-16 12:10:30.933521: "Black" vs "Neural network (6 inner layers)" (9ed68859-4064-4b25-9469-6175733a57e6): (B None, W None), Crash, Crash
+2016-05-16 12:16:47.617069: "Black" vs "Neural network (6 inner layers)" (3e156ddc-0284-4c5e-84cd-bc93390aa882): (B None, W None), Crash, Crash
+2016-05-16 12:26:08.031152: "Black" vs "Neural network (6 inner layers)" (ca00cd33-b75b-4e1a-b4fc-befbb04a8f2c): (B None, W None), Crash, Crash
+2016-05-16 12:27:18.811756: "Black" vs "Neural network (6 inner layers)" (a11279fd-ccc4-49f0-b372-387d4424ff9f): (B None, W None), Crash, Crash
+2016-05-16 12:27:58.013635: "Black" vs "Neural network (6 inner layers)" (8c6914c7-9aa9-4948-bb1e-59e570006593): (B None, W None), Crash, Crash
+2016-05-16 12:28:13.531197: "Black" vs "Neural network (6 inner layers)" (88023ce5-cce6-4136-848d-846e9b8e7a30): (B None, W None), Crash, Crash
+2016-05-16 12:35:30.536162: "Black" vs "Neural network (6 inner layers)" (8c91f87a-69f1-42c7-ad85-3293364f4634): (B None, W None), Crash, Crash
+2016-05-16 12:39:19.407527: "Black" vs "Neural network (6 inner layers)" (70b98309-46f9-447c-9362-625a705159f0): (B None, W None), Crash, Crash
+2016-05-16 12:41:32.211513: "Black" vs "Deep Neural network (11 inner layers)" (b841405d-4ed5-48f7-8fda-aa9ebe2e1d24): (B None, W None), Crash, Crash
+2016-05-16 12:41:44.222152: "Black" vs "Neural network (6 inner layers)" (20659362-d55c-4ba9-9bc9-1e7cb587757f): (B None, W None), Crash, Crash
+2016-05-16 12:48:28.178056: "Neural network (6 inner layers)" vs "One-move search" (34ef569d-a105-44e2-8d79-45c585b81598): (B None, W None), Crash, Crash

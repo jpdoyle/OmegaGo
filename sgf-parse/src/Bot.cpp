@@ -433,12 +433,12 @@ void NeuralNetBot::newBoard(Board&& newB) {
     for(size_t i = 0; i < 8; ++i) {
         dihedralTranspose(baseFeatures,oriented,i);
         tiny_cnn::vec_t& planes = features[i];
+        /* auto& os2 = std::cerr; */
+        auto& outFeats = oriented;
         convertToTCNNInput(outFeats,planes);
 
 
         /* { */
-        /*     auto& os2 = std::cerr; */
-        /*     auto& outFeats = oriented; */
         /*     auto sym = i; */
         /*     os2 << "Symmetry " << sym << ":\n"; */
         /*     os2 << "\nColors:\n"; */
@@ -451,7 +451,7 @@ void NeuralNetBot::newBoard(Board&& newB) {
         /*             auto f = outFeats[IX({x,y})]; */
         /*             os2 << (f.color == EMPTY ? '_' : */
         /*                     f.color == MINE  ? 'o' : */
-        /*                     /*f.color == ENEMY*/ '*'); */
+//                            /*f.color == ENEMY*/ '*');
         /*         } */
         /*         os2 << "#"; */
         /*     } */
