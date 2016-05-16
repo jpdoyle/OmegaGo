@@ -460,8 +460,6 @@ Board::Move NeuralNetBot::getMove() {
             maxInd = i;
         }
     }
-    std::discrete_distribution<>
-        dist(sensibleVals.begin(),sensibleVals.end());
-    return {isBlack,false,sensible[dist(randEng)]};
+    return {isBlack,false,sensible[maxInd]};
 }
 
