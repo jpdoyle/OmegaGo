@@ -8892,3 +8892,8 @@
 2016-05-16 00:54:57.542809: "One-move search" vs "Simple MCTS (8 thread)" (f6f796d1-1293-4c9d-9291-15521b3a21e6): (B None, W None), Crash, Crash
 2016-05-16 00:55:09.832997: "Simple MCTS (5 thread)" vs "AP-MCTS (MCTS4-NN3)" (83258cb5-2a86-4bad-9b17-c105d7cf4e09): (B None, W None), Crash, Crash
 2016-05-16 00:55:11.906582: "Simple MCTS (8 thread)" vs "Neural network (4 inner layers)" (f0a9b4ae-90bf-491f-a690-ee661a80977c): (B None, W None), Crash, Crash
+2016-05-16 01:06:51.737562: "RandomBot" vs "Neural network (5 inner layers)" (6b134e14-75cf-4f3f-9aec-2f55009d0510): (B None, W None), Crash, Crash
+2016-05-16 01:06:52.465068: "Neural network (5 inner layers)" vs "Neural network (3 inner layers)" (7e5bd055-f9a8-44e1-8823-48361c334cb3): (B None, W None), Crash, Crash
+2016-05-16 01:06:54.534115: "Neural network (3 inner layers)" vs "Neural network (5 inner layers)" (b38ca85e-054c-4aa4-b023-d213b54ac633): (B None, W None), Crash, Crash
+2016-05-16 01:06:56.655919: "Neural network (3 inner layers)" vs "Simple MCTS (5 thread)" (5e1beaed-5067-4e46-8877-47745cfcea19): (B None, W None), Crash, Crash
+2016-05-16 01:07:11.977254: "RandomBot" vs "Neural network (5 inner layers)" (fb541a43-396f-4ad7-9626-8fccb606a591): (B None, W None), Crash, Crash

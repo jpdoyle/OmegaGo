@@ -114,8 +114,7 @@ class CppAI:
     def __init__(self,params=['--randombot']):
         self.name += ':' + str(params)
         self.popen = Popen(['../sgf-parse/build/sgfparse'] + params,
-                           stdin=PIPE,stdout=PIPE,bufsize=4096,
-                           preexec_fn=enableCoreDump)
+                           stdin=PIPE,stdout=PIPE,bufsize=4096)
 
     def setColor(self,isBlack):
         print "SENDING COLOR TO {}".format(self.name)
