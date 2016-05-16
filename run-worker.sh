@@ -9,7 +9,7 @@ isDone=false
 while ! $isDone; do
     python worker.py $*
     if [[ $? -eq 64 ]]; then
-        cd -
+        pushd ..
         git stash
         git push
         git pull --no-edit
@@ -18,6 +18,7 @@ while ! $isDone; do
 
         deactivate
         . ./build.sh
+        popd
     else
         isDone=true
     fi

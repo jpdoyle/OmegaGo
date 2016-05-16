@@ -10,4 +10,4 @@ cd /run/user/2615888
 git clone --depth=1 --recursive git@github.com:Ginto8/OmegaGo.git
 cd OmegaGo/
 echo "$(nproc || echo 4) build threads"
-./run-worker.sh jpdoyle.net/omegago
+./run-worker.sh jpdoyle.net/omegago ssl
