@@ -453,11 +453,11 @@ Board::Move NeuralNetBot::getMove() {
             sensibleVals[j] += (*weights)[ix];
         }
     }
-    std::cout << "My board: " << *b << std::endl;
+    std::cerr << "My board: " << *b << std::endl;
 
-    std::cout << "Sensible moves: \n";
+    std::cerr << "Sensible moves: \n";
     for(size_t i = 0; i < sensible.size(); ++i) {
-        std::cout << "   <" << sensible[i].first << ","
+        std::cerr << "   <" << sensible[i].first << ","
                   << sensible[i].second << ">: " << sensibleVals[i]
                   << std::endl;
     }

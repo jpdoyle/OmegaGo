@@ -9010,3 +9010,6 @@
 2016-05-16 11:14:27.467303: "Deep Neural network (11 inner layers)" vs "AP-MCTS (MCTS6-NN6)" (897825a1-84d2-45f7-88e7-ab261c317329): (B None, W None), Crash, Crash
 2016-05-16 11:14:36.162575: "Simple MCTS (2 thread)" vs "Simple MCTS (1 thread)" (3080fa29-8d03-4a1c-aee1-a8fb491d9b3e): (B None, W None), Crash, Crash
 2016-05-16 11:19:10.614212: "RandomBot" vs "Neural network (5 inner layers)" (cb611f42-e4cd-4364-ae52-c492e55c6060): (B 434, W 449), W+15, "Neural network (5 inner layers)" > "RandomBot"
+2016-05-16 11:22:47.197464: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (c663899a-15ab-4687-ab2f-46956db84ae7): (B 0, W 15), W+15, "Deep Neural network (11 inner layers)" > "Neural network (6 inner layers)"
+2016-05-16 11:24:30.038115: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (cfa18f83-f26d-45a1-bc8f-b0d9f5c0f318): (B 0, W 15), W+15, "Deep Neural network (11 inner layers)" > "Neural network (6 inner layers)"
+2016-05-16 11:25:47.327650: "Neural network (6 inner layers)" vs "Deep Neural network (11 inner layers)" (b9c54288-57c9-4b65-a9e7-0aec9ab1faf1): (B 0, W 15), W+15, "Deep Neural network (11 inner layers)" > "Neural network (6 inner layers)"
