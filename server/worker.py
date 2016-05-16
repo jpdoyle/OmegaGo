@@ -62,6 +62,7 @@ def startWorker(taskDict,masterAddr,ssl):
 
             r.raise_for_status()
             task = r.json()
+            print json.dumps(task)
             if 'update' in task and task['update']:
                 print "Server told me to update"
                 for _,_,_,p,_ in tasks:
