@@ -14,10 +14,12 @@ head = ''
 projroot = mypath + "/.."
 with open(projroot+"/.git/refs/heads/master") as f:
     head = f.read().rstrip()
+    print "I am at commit {}".format(head)
 
 with open(projroot+"/.git/HEAD") as f:
     try:
         headref = f.read().rstrip().split(' ')[1]
+        print "I am on branch {}".format(head)
         assert (headref == "refs/heads/master")
     except:
         exit(64)
@@ -61,6 +63,7 @@ def startWorker(taskDict,masterAddr,ssl):
             r.raise_for_status()
             task = r.json()
             if 'update' in task and task['update']:
+                print "Server told me to update"
                 for _,_,_,p,_ in tasks:
                     try:
                         p.terminate()
