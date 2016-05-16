@@ -70,7 +70,7 @@ def generalAI(playerId,isBlack,ai,makeRequest):
 
 def makeGeneralAI(constructor):
     def ai(playerId,isBlack,makeRequest):
-        generalAI(playerId,isBlack,constructor(),addr)
+        generalAI(playerId,isBlack,constructor(),makeRequest)
     return ai
 
 class RandomMoveAI:
