@@ -592,6 +592,7 @@ int main(int argc,char* argv[]) {
                     ss.str(str);
                     auto b2 = readBoard(makeStream(ss));
                     assert(b2);
+                    /* assert(*b2 == b); */
                     ss.str("");
                     ss.seekp(0);
                     ss.seekg(0);

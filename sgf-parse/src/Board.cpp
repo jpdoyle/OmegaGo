@@ -44,6 +44,7 @@ ptr<Board> readBoard(stream nextCh) {
     MUST(expect(nextCh,"\nW: "));
     b.blackCaptives_ = readInt(nextCh);
     MUST(expect(nextCh,"\n"));
+
     for(int i = 0; i < 21; ++i) {
         MUST(expect(nextCh,"#"));
     }
@@ -73,6 +74,32 @@ ptr<Board> readBoard(stream nextCh) {
         ++y;
     }
     for(int i = 0; i < 21; ++i) {
+        MUST(expect(nextCh,"#"));
+    }
+    MUST(expect(nextCh,"\n"));
+
+    constexpr auto dig = Board::MAX_MOVE_DIGITS;
+    for(int i = 0; i < 1+21*(dig+1); ++i) {
+        MUST(expect(nextCh,"#"));
+    }
+    MUST(expect(nextCh,"\n"));
+
+    for(auto& row: b.turnPlayed_) {
+        for(int i = 0; i < dig+1; ++i) {
+            MUST(expect(nextCh,"#"));
+        }
+        for(auto& t: row) {
+            MUST(expect(nextCh," "));
+            auto val = readInt(nextCh);
+            t = val;
+        }
+        MUST(expect(nextCh," "));
+        for(int i = 0; i < dig+1; ++i) {
+            MUST(expect(nextCh,"#"));
+        }
+        MUST(expect(nextCh,"\n"));
+    }
+    for(int i = 0; i < 1+21*(dig+1); ++i) {
         MUST(expect(nextCh,"#"));
     }
 
@@ -108,10 +135,13 @@ ptr<Board> readBoard(stream nextCh) {
                 size_t libs = 0;
                 size_t chain = 0;
                 Board::Cell color = b.cells_[p.second][p.first];
-                b.for_chain(p,[&chain,&libs,color](Board::Coord p,
-                                            Board::Cell c) {
+                b.for_chain(p,[&,color](Board::Coord p,
+                                        Board::Cell c) {
                     if(c == Board::Empty) {
                         ++libs;
+                        if(b.isSolidEye(color,p)) {
+                            ++b.solidEyes_[ix];
+                        }
                     } else if(c == color) {
                         ++chain;
                     }

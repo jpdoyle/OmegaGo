@@ -1,22 +1,10 @@
-import requests,random,time,sys
+import random,time,sys
 from subprocess import Popen,PIPE
 import traceback
 from loadbalance import WorkerLoad
 import socket
 
-mypath = sys.argv[0]
-print mypath
-if '/' in mypath:
-    mypath = mypath[:mypath.rfind('/')]
-else:
-    mypath = '.'
-
-jpdoylecert=mypath + "/../jpdoyle-cert.pem"
-def enableCoreDump():
-    import resource
-    resource.setrlimit(resource.RLIMIT_CORE, (-1, -1))
-
-def generalAI(playerId,isBlack,ai,addr='localhost:51337'):
+def generalAI(playerId,isBlack,ai,makeRequest):
     ai.setColor(isBlack)
     print "{} STARTING".format(ai.name)
     board = None
@@ -26,9 +14,8 @@ def generalAI(playerId,isBlack,ai,addr='localhost:51337'):
                 print "%s getting first board" % \
                     ('B' if isBlack else 'W')
                 print "GETTING NEW BOARD"
-                r = requests.post('https://' + addr + '/api/board',
-                                    data={'key':playerId,'isai':True},
-                                    verify=jpdoylecert)
+                r = makeRequest('/api/board','POST',
+                                data={'key':playerId,'isai':True})
                 r.raise_for_status()
                 board = r.json()
                 ai.updateBoard(board)
@@ -45,8 +32,7 @@ def generalAI(playerId,isBlack,ai,addr='localhost:51337'):
                     data['x'] = x
                     data['y'] = y
                 print "PLAYING"
-                r = requests.post('https://' + addr + '/api/play',
-                        data=data,verify=jpdoylecert)
+                r = makeRequest('/api/play','POST',data=data)
 
                 print str(r)
                 if r.status_code == 400:
@@ -64,10 +50,9 @@ def generalAI(playerId,isBlack,ai,addr='localhost:51337'):
                   mycolor != board['toMove'] and \
                   (not ('done' in board) or not board['done']):
                 print "GETTING NEW BOARD"
-                r = requests.post(
-                        'https://' + addr + '/api/boardchange',
-                        data={'key':playerId,'isai':True,
-                                'move':moveNum},verify=jpdoylecert)
+                r = makeRequest('/api/boardchange','POST',
+                                data={'key':playerId,'isai':True,
+                                      'move':moveNum})
                 r.raise_for_status()
                 board = r.json()
                 ai.updateBoard(board)
@@ -84,7 +69,7 @@ def generalAI(playerId,isBlack,ai,addr='localhost:51337'):
     print "{} DONE".format(ai.name)
 
 def makeGeneralAI(constructor):
-    def ai(playerId,isBlack,addr='localhost:51337'):
+    def ai(playerId,isBlack,makeRequest):
         generalAI(playerId,isBlack,constructor(),addr)
     return ai
 

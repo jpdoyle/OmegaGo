@@ -21,6 +21,7 @@ static std::pair<size_t,size_t> ixToCoord(size_t i) {
 
 struct Board {
     using Coord = std::pair<size_t,size_t>;
+    static constexpr int MAX_MOVE_DIGITS = 3; // 1000 is still excessive
 
     enum Cell { Empty, Black, White };
     struct Move {
@@ -399,6 +400,44 @@ OS& operator<<(OS& os,const Board& b) {
         ++y;
     }
     for(int i = 0; i < 21; ++i) {
+        os << "#";
+    }
+    os << "\n";
+
+    constexpr auto dig = Board::MAX_MOVE_DIGITS;
+    for(int i = 0; i < 1+21*(dig+1); ++i) {
+        os << "#";
+    }
+    os << "\n";
+    for(const auto& row: b.turnPlayed) {
+        for(int i = 0; i < (dig+1); ++i) {
+            os << "#";
+        }
+
+        for(auto t: row) {
+            char s[dig+1];
+            os << " ";
+            auto digits = snprintf(s,sizeof(s),"%lu",t);
+            if(digits < 0) {
+                s[0] = '\0';
+                digits = 0;
+            } else {
+                digits = std::min(dig,digits);
+            }
+
+            for(size_t i = digits; i < dig; ++i) {
+                os << "0";
+            }
+            os << s;
+        }
+
+        os << " ";
+        for(int i = 0; i < (dig+1); ++i) {
+            os << "#";
+        }
+        os << "\n";
+    }
+    for(int i = 0; i < 1+21*(dig+1); ++i) {
         os << "#";
     }
 

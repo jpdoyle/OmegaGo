@@ -11,6 +11,17 @@ from datetime import datetime,timedelta
 import resource,socket
 from loadbalance import WorkerLoad
 
+mypath = sys.argv[0]
+print mypath
+mypath = os.path.dirname(mypath)
+if mypath == '':
+    mypath = '.'
+
+serverVersion = ''
+projroot = mypath + "/.."
+with open(projroot+"/.git/refs/heads/master") as f:
+    serverVersion = f.read().rstrip()
+
 os.nice(20)
 
 resource.setrlimit(resource.RLIMIT_CORE, (-1, -1))
@@ -329,12 +340,13 @@ def viewGames():
     with workerLock:
         for k,v in workers.iteritems():
             workerStats.append((v['id'],v['name'],v['tasks'],
-                                v['avail'],v['maxAvail'],v['running']))
+                                v['avail'],v['maxAvail'],
+                                v['running'],v['version']))
     return render_template('view.html',
             games=[s for g,s in
                     sorted(status,key=lambda g: g[0]['startTime'])],
-            workers=workerStats,
-            tourney=runningTourney)
+            workers=workerStats,tourney=runningTourney,
+            version=serverVersion)
 
 @app.route('/games')
 def listGames():
@@ -343,12 +355,13 @@ def listGames():
     with workerLock:
         for k,v in workers.iteritems():
             workerStats.append((v['id'],v['name'],v['tasks'],
-                                v['avail'],v['maxAvail'],v['running']))
+                                v['avail'],v['maxAvail'],
+                                v['running'],v['version']))
     return render_template('games.html',
             games=[s for g,s in
                     sorted(status,key=lambda g: g[0]['startTime'])],
-            workers=workerStats,
-            tourney=runningTourney)
+            workers=workerStats,tourney=runningTourney,
+            version=serverVersion)
 
 @app.route('/go')
 def gameSetup():
@@ -438,6 +451,7 @@ def offerwork():
     maxLoad = data.get('maxAvail',[0,0])
     maxLoad = WorkerLoad(maxLoad[0],maxLoad[1])
     running = data.get('running',[])
+    version = data.get('head','')
 
     refreshWorker(workerId,{
         'id': workerId,
@@ -445,7 +459,8 @@ def offerwork():
         'tasks':tasks,
         'avail':load,
         'maxAvail':maxLoad,
-        'running':running
+        'running':running,
+        'version':version
     })
 
     # print
@@ -476,6 +491,9 @@ def offerwork():
                     aiLock.notifyAll()
             del tryingToStart[workerId]
 
+    if version != serverVersion:
+        return json.jsonify({'newTasks':[],'update':True})
+
     newTasks = []
 
     with aiLock:
@@ -503,7 +521,7 @@ def offerwork():
         print "New ais: {}".format(ais)
         aiLock.notifyAll()
 
-        return json.jsonify({'newTasks':newTasks})
+        return json.jsonify({'newTasks':newTasks,'update':False})
 
 @app.route('/api/tourney', methods=['GET'])
 def setTourney():
