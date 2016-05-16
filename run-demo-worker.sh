@@ -1,8 +1,8 @@
 kill `pgrep -f worker.py`
-kill `pgrep -f worker.sh`
+kill `pgrep -f ' worker.sh'`
 killall sgfparse
 kill -9 `pgrep -f worker.py`
-kill -9 `pgrep -f worker.sh`
+kill -9 `pgrep -f ' worker.sh'`
 killall -9 sgfparse
 rm -rf ~/.ccache/
 rm -rf /run/user/2615888/*
