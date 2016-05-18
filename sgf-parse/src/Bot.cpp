@@ -189,9 +189,14 @@ MonteCarloBot::MonteCarloBot(size_t numThreads,
             std::random_device r;
             std::mt19937 rng(r());
             std::vector<double> vals;
+            std::vector<MonteCarloNode*> path;
 
             while(!done.load()) {
                 MonteCarloNode* node = root.load();
+                auto searchStart = node;
+                if(searchStart) {
+                    searchStart->searches++;
+                }
 
                 /* std::cerr << "Searching" << std::endl; */
 
@@ -202,6 +207,7 @@ MonteCarloBot::MonteCarloBot(size_t numThreads,
                     {
                         policy.eval(*node);
                         evals++;
+                        break;
                     }
                     if(node->moves.empty()) {
                         node = nullptr;
@@ -219,6 +225,9 @@ MonteCarloBot::MonteCarloBot(size_t numThreads,
                             dist(vals.begin(),vals.end());
                         node = node->children[dist(rng)].load();
                     }
+                }
+                if(searchStart) {
+                    searchStart->searches--;
                 }
 
                 /* std::cerr << "CHECKING DELETION" <<

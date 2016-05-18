@@ -150,7 +150,7 @@ void MonteCarloNode::runSimulation(std::mt19937& rng) {
                 double rawVal = node->values[0].load();
                 double vis = node->visits[0].load();
                 maxVal = rawVal +
-                    5*node->probabilities[0].load()*bonus/(1+vis);
+                    50*node->probabilities[0].load()*bonus/(1+vis);
             }
 
             std::vector<size_t> maxInds;
@@ -159,7 +159,7 @@ void MonteCarloNode::runSimulation(std::mt19937& rng) {
                 double rawVal = node->values[i].load();
                 double vis = node->visits[i].load();
                 double val = rawVal +
-                    5*node->probabilities[i].load()*bonus/(1+vis);
+                    50*node->probabilities[i].load()*bonus/(1+vis);
                 if(val > maxVal + 0.01) {
                     maxInds.clear();
                     maxVal = val;
