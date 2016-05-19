@@ -641,19 +641,19 @@ int main(int argc,char* argv[]) {
             b.run();
             return 0;
 
-        } else if(filename == "--nnafs") {
-            int whichOne = 1;
-            if(argc > 2) {
-                try {
-                    whichOne = std::stoi(argv[2]);
-                } catch(std::exception e) {}
-            }
-            NeuralNetBot b("/afs/andrew.cmu.edu/usr17/jpdoyle"
-                           "/private/omegago/sgf-parse/build/sgfparse",whichOne);
-            b.run();
-            return 0;
+/*         } else if(filename == "--nnafs") { */
+/*             int whichOne = 1; */
+/*             if(argc > 2) { */
+/*                 try { */
+/*                     whichOne = std::stoi(argv[2]); */
+/*                 } catch(std::exception e) {} */
+/*             } */
+/*             NeuralNetBot b("/afs/andrew.cmu.edu/usr17/jpdoyle" */
+/*                            "/private/omegago/sgf-parse/build/sgfparse",whichOne); */
+/*             b.run(); */
+/*             return 0; */
 
-        } else if(filename == "--nn") {
+        } else if(filename == "--nn" || filename == "--nnafs") {
             int whichOne = 1;
             if(argc > 2) {
                 try {
