@@ -638,7 +638,7 @@ Board::Move NeuralNetBot::getMove() {
                 size_t minInd = 0;
                 size_t minVal = sensibleVals[top10[0]];
                 for(size_t j = 1; j < 10; ++j) {
-                    auto val = sensibleVals[top10[j]]
+                    auto val = sensibleVals[top10[j]];
                     if(minVal > val) {
                         minInd = j;
                         minVal = val;
