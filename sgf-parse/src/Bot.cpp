@@ -636,8 +636,8 @@ Board::Move NeuralNetBot::getMove() {
             } else {
                 auto v = sensibleVals[i];
                 size_t minInd = 0;
-                size_t minVal = sensibleVals[top10[0]];
-                for(size_t j = 1; j < 10; ++j) {
+                auto minVal = sensibleVals[top10[0]];
+                for(size_t j = 1; j < top10.size(); ++j) {
                     auto val = sensibleVals[top10[j]];
                     if(minVal > val) {
                         minInd = j;
@@ -658,12 +658,12 @@ Board::Move NeuralNetBot::getMove() {
 
     /* std::cerr << "My board: " << *b << std::endl; */
 
-    /* std::cerr << "Sensible moves: \n"; */
-    /* for(size_t i = 0; i < sensible.size(); ++i) { */
-    /*     std::cerr << "   <" << sensible[i].first << "," */
-    /*               << sensible[i].second << ">: " << sensibleVals[i] */
-    /*               << std::endl; */
-    /* } */
+    std::cerr << "Sensible moves: \n";
+    for(size_t i = 0; i < sensible.size(); ++i) {
+        std::cerr << "   <" << sensible[i].first << ","
+                  << sensible[i].second << ">: " << sensibleVals[i]
+                  << std::endl;
+    }
 
     std::discrete_distribution<>
         dist(sensibleVals.begin(),sensibleVals.end());
