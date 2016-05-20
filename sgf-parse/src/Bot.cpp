@@ -627,6 +627,29 @@ Board::Move NeuralNetBot::getMove() {
             sensibleVals[j] += (*weights)[ix];
         }
     }
+
+    if(sensibleVals.size() > 10) {
+        std::array<double,10> top10;
+        for(size_t i = 0; i < sensibleVals.size(); ++i) {
+            if(i < 10) {
+                top10[i] = i;
+            } else {
+                auto v = sensibleVals[i];
+                for(size_t j = 0; j < 10; ++j) {
+                    if(v > sensibleVals[top10[j]]) {
+                        top10[j] = i;
+                        break;
+                    }
+                }
+            }
+        }
+        for(size_t i = 0; i < sensibleVals.size(); ++i) {
+            if(!std::count(top10.begin(),top10.end(),i)) {
+                sensibleVals[i] = 0;
+            }
+        }
+    }
+
     /* std::cerr << "My board: " << *b << std::endl; */
 
     /* std::cerr << "Sensible moves: \n"; */
