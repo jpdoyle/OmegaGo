@@ -635,11 +635,17 @@ Board::Move NeuralNetBot::getMove() {
                 top10[i] = i;
             } else {
                 auto v = sensibleVals[i];
-                for(size_t j = 0; j < 10; ++j) {
-                    if(v > sensibleVals[top10[j]]) {
-                        top10[j] = i;
-                        break;
+                size_t minInd = 0;
+                size_t minVal = sensibleVals[top10[0]];
+                for(size_t j = 1; j < 10; ++j) {
+                    auto val = sensibleVals[top10[j]]
+                    if(minVal > val) {
+                        minInd = j;
+                        minVal = val;
                     }
+                }
+                if(v > minVal) {
+                    top10[minInd] = i;
                 }
             }
         }
